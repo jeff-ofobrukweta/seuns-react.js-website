@@ -3,6 +3,7 @@ import Logo from '../images/chat.png';
 import Desk from '../images/Data.png';
 import City from '../images/city.png';
 import Grid from '../Grid/Grid';
+import Loader from '../Loader/Loader';
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -34,6 +35,7 @@ class Navbar extends Component {
     return (
         <div id="wrapper">
         <div className="section-grid-1">
+        <Loader/>
         <div className="Navbar">
                 <div className="one">
                     <header>
@@ -56,7 +58,7 @@ class Navbar extends Component {
                     <div className="Nested">
                     <p className="first">
                         <div className="nested-A">
-                            <h2 style={{fontSize: '32px',lineHeight: '57px'}}><b>WE PROVIDE <span style={{color:'#e14800'}}>INFORMATION</span></b></h2> 
+                            <h2 style={{fontSize: '32px',lineHeight: '57px'}}><b>WE PROVIDE <span class="text-js" style={{color:'#e14800'}}>INFORMATION</span></b></h2> 
                             <h2 style={{fontSize: '32px'}}>DESIGNED TO SUPPORT DEVELOPMENT</h2>
                         </div>
                         <div className="nested-A" id="orange" style={{borderBottom:'5px solid #e14800',width:'5%'}}>
@@ -156,9 +158,6 @@ class Navbar extends Component {
                         <input type="text" placeholder=" EMAIL" style={{width:'65%',height: 34,border:0,margin: '11px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
                         <input type="text" placeholder=" SUBJECT" style={{width:'65%',height: 34,border:0,margin: '11px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
                     </section>
-                    <section style={{textAlign:'center'}}>
-                        <input type="submit" value="SUBMIT" style={{color:'#fff',fontWeight:700,width: '150px',height: '42px',background: '#e14800',outline: 0,border: 0,borderRadius:4}}/>
-                    </section>
                     </p>
                     <p>
                     <header style={{margin:'11px 101px',textAlign:'right'}}>
@@ -168,6 +167,9 @@ class Navbar extends Component {
                     </header>
                     <section style={{textAlign:'center'}}>
                         <textarea placeholder=" write a message here.." style={{width:'65%',height: '205px',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
+                    </section>
+                    <section style={{textAlign:'center'}}>
+                        <input type="submit" value="SUBMIT" style={{color:'#fff',fontWeight:700,width: '150px',height: '42px',background: '#e14800',outline: 0,border: 0,borderRadius:4}}/>
                     </section>
                     </p>
                 </div>

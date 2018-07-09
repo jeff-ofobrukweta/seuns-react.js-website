@@ -4,7 +4,9 @@ import  './Loader.css';
 class Loader extends Component {
   render() {
     return (
-       <div></div>
+       <div>
+       <div id="fab" className="fa fa-pencil fa-1x"></div>
+       </div>
     );
   }
 }

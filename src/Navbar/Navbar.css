@@ -114,7 +114,7 @@ blockquote {
   grid-template-columns:1.4fr 1fr;
   grid-template-rows: repeat(1,minmax(600px,auto));
   align-items:center;
-  grid-gap: 1px;
+  /* grid-gap: 1px; */
 }
 .Nested p{
  /* border: 1px solid #000; */
@@ -139,7 +139,7 @@ blockquote {
   grid-template-columns:1fr 1fr;
   /* grid-template-rows: repeat(1,minmax(600px,auto)); */
   align-items:center;
-  grid-gap: 1px;
+  /* grid-gap: 1px; */
 }
 .eight p{
  /* border: 1px solid #000; */
@@ -151,7 +151,7 @@ blockquote {
   grid-template-columns:1fr;
   /* grid-template-rows: repeat(1,minmax(600px,auto)); */
   align-items:center;
-  grid-gap: 1px;
+  /* grid-gap: 1px; */
 }
 .nine p{
  /* border: 1px solid #000; */
@@ -164,7 +164,7 @@ blockquote {
   grid-template-columns:1fr 1fr;
   /* grid-template-rows: repeat(1,minmax(600px,auto)); */
   align-items:center;
-  grid-gap: 1px;
+  /* grid-gap: 1px; */
 }
 .ten p{
  /* border: 1px solid #000; */
@@ -176,7 +176,7 @@ blockquote {
   grid-template-columns:1fr 1fr 1fr;
   /* grid-template-rows: repeat(1,minmax(600px,auto)); */
   align-items:center;
-  grid-gap: 1px;
+  /* grid-gap: 1px; */
 }
 .eleven p{
  background: #ccc;
@@ -272,7 +272,7 @@ blockquote {
       grid-template-columns:1fr;
       grid-template-rows: repeat(1,minmax(65px,auto));
       align-items:center;
-      grid-gap: 1px;
+      /* grid-gap: 1px; */
     }
     .seven p{
      /* border: 1px solid #000; */
@@ -284,7 +284,7 @@ blockquote {
       grid-template-columns:1fr;
       grid-template-rows: repeat(1,minmax(65px,auto));
       align-items:center;
-      grid-gap: 1px;
+      /* grid-gap: 1px; */
     }
     .eight p{
      /* border: 1px solid #000; */
@@ -296,7 +296,7 @@ blockquote {
       grid-template-columns:1fr;
       /* grid-template-rows: repeat(1,minmax(600px,auto)); */
       align-items:center;
-      grid-gap: 1px;
+      /* grid-gap: 1px; */
     }
     .ten p{
      /* border: 1px solid #000; */
@@ -308,7 +308,7 @@ blockquote {
       grid-template-columns:1fr;
       /* grid-template-rows: repeat(1,minmax(600px,auto)); */
       align-items:center;
-      grid-gap: 1px;
+      /* grid-gap: 1px; */
     }
     .eleven p{
       background: #ccc;
@@ -400,6 +400,7 @@ blockquote {
     /* Grid-area */
   }
   
+  /* write-selft */
   
-
+  
 
