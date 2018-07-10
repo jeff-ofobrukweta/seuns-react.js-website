@@ -338,7 +338,7 @@ blockquote {
       /* background: #595050; */
   }
   .Nested{
-    background: url('../images/chat.png') !important;
+    /* background: url('../images/chat.png') !important; */
     background-repeat: no-repeat !important;
     background-size: cover;
     z-index: 1 !important;
