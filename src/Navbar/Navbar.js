@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Logo from '../images/chat.png';
+import Logo from '../images/landing.jpg';
 import Desk from '../images/Data.png';
 import City from '../images/city.png';
 import Grid from '../Grid/Grid';
@@ -30,7 +30,7 @@ class Navbar extends Component {
       }else
       {
         classes.push('');
-         burgerSign.push('fa fa-close fa-x');
+         burgerSign.push('fa fa-close fa-1x');
       }
     return (
         <div id="wrapper">
@@ -58,8 +58,8 @@ class Navbar extends Component {
                     <div className="Nested">
                     <p className="first">
                         <div className="nested-A">
-                            <h2 style={{fontSize: '32px',lineHeight: '57px'}}><b>WE PROVIDE <span class="text-js" style={{color:'#e14800'}}>INFORMATION</span></b></h2> 
-                            <h2 style={{fontSize: '32px'}}>DESIGNED TO SUPPORT DEVELOPMENT</h2>
+                            <h2 style={{fontSize: '32px',lineHeight: '57px'}}><b style={{fontWeight:1000}}>WE PROVIDE <span class="text-js" style={{color:'#e14800',fontWeight:1000}}>INFORMATION</span></b></h2> 
+                            <h2 style={{fontSize: '32px',marginBottom:'34px'}}>DESIGNED TO SUPPORT DEVELOPMENT</h2>
                         </div>
                         <div className="nested-A" id="orange" style={{borderBottom:'5px solid #e14800',width:'5%'}}>
                         </div>
@@ -70,10 +70,11 @@ class Navbar extends Component {
                             </section>
                         </div>
                     </p>
-                        {
-                            // <p className="second">
-                            // </p>
-                    }
+                        
+                            <p className="second">
+                                <img style={{width:'100%'}} src={Logo} alt="png"/>
+                            </p>
+                    
                     </div>
                 </div>
                 <div className="two">2</div>
@@ -148,6 +149,7 @@ class Navbar extends Component {
                 </div>
                 <div className="ten">
                     <p>
+                    <form>
                     <header style={{margin: '11px 101px'}}>
                     <h2>LEARN MORE</h2>
                     <h3>Project</h3>
@@ -158,19 +160,22 @@ class Navbar extends Component {
                         <input type="text" placeholder=" EMAIL" style={{width:'65%',height: 34,border:0,margin: '11px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
                         <input type="text" placeholder=" SUBJECT" style={{width:'65%',height: 34,border:0,margin: '11px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
                     </section>
+                    </form>
                     </p>
                     <p>
+                    <form>
                     <header style={{margin:'11px 101px',textAlign:'right'}}>
                     <h2>LEARN MORE</h2>
                     <h3>Project</h3>
                     <h3>Client</h3>
                     </header>
-                    <section style={{textAlign:'center'}}>
+                    <section className="textarea-section" style={{textAlign:'center'}}>
                         <textarea placeholder=" write a message here.." style={{width:'65%',height: '205px',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
                     </section>
                     <section style={{textAlign:'center'}}>
                         <input type="submit" value="SUBMIT" style={{color:'#fff',fontWeight:700,width: '150px',height: '42px',background: '#e14800',outline: 0,border: 0,borderRadius:4}}/>
                     </section>
+                    </form>
                     </p>
                 </div>
                 <div className="eleven">

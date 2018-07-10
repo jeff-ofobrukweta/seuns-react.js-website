@@ -106,9 +106,10 @@ blockquote {
 }
 /* the nested-region for the first region ie-Nested is grid -1 nested */
 .Nested{
-  background: url('../images/chat.png') !important;
+  /* background: url('../images/chat.png') !important; */
   background-repeat: no-repeat !important;
   background-size: cover;
+  width:100%;
   z-index: 1 !important;
   display: grid;
   grid-template-columns:1.4fr 1fr;
@@ -125,7 +126,7 @@ blockquote {
 .seven{
   display: grid;
   grid-template-columns:1fr 1fr;
-  /* grid-template-rows: repeat(1,minmax(600px,auto)); */
+  grid-template-rows: repeat(1,minmax(600px,auto));
   align-items:center;
   grid-gap: 1px;
 }
