@@ -80,31 +80,21 @@ class Navbar extends Component {
                 </div>
                 <div className="two">
                 <p className="two-p">
-                 {
                      <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
-                 }
                 </p>
                 </div>
                 <div className="three">
-                {
                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
-                }
                 </div>
                 <div className="four">
-                {
                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
-                }
                 </div>
                 <div className="five">
-                {
                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
-                }
                 </div>
                 <div className="six">
                     <p className="six-p">
-                    {
                         <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
-                    }
                     </p>
                 </div>
                 <div className="seven">
