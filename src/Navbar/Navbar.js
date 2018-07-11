@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Logo from '../images/landing.jpg';
+import icecream from '../images/icecream.jpg';
 import Desk from '../images/Data.png';
 import City from '../images/city.png';
 import Grid from '../Grid/Grid';
@@ -58,13 +59,13 @@ class Navbar extends Component {
                     <div className="Nested">
                     <p className="first">
                         <div className="nested-A">
-                            <h2 style={{fontSize: '32px',lineHeight: '57px'}}><b style={{fontWeight:1000}}>WE PROVIDE <span class="text-js" style={{color:'#e14800',fontWeight:1000}}>INFORMATION</span></b></h2> 
+                            <h2  class="text-write2" style={{fontSize: '32px',lineHeight: '57px'}}><b style={{fontWeight:1000}}><span>WE PROVIDE</span> <p class="text-write" style={{color:'#e14800',fontWeight:1000,position:'relative'}}>INFORMATION.</p></b></h2> 
                             <h2 style={{fontSize: '32px',marginBottom:'34px'}}>DESIGNED TO SUPPORT DEVELOPMENT</h2>
                         </div>
                         <div className="nested-A" id="orange" style={{borderBottom:'5px solid #e14800',width:'5%'}}>
                         </div>
                         <div className="nested-A">
-                            <section>
+                            <section style={{fontWeight:500,fontSize:21,wordSpacing:1}}>
                                 Application of developed data infrastructure,information<br/>
                                 management and communication to improve Human settlement and enviroment.
                             </section>
@@ -77,11 +78,35 @@ class Navbar extends Component {
                     
                     </div>
                 </div>
-                <div className="two">2</div>
-                <div className="three">3</div>
-                <div className="four">4</div>
-                <div className="five">5</div>
-                <div className="six">6</div>
+                <div className="two">
+                <p className="two-p">
+                 {
+                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                 }
+                </p>
+                </div>
+                <div className="three">
+                {
+                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                }
+                </div>
+                <div className="four">
+                {
+                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                }
+                </div>
+                <div className="five">
+                {
+                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                }
+                </div>
+                <div className="six">
+                    <p className="six-p">
+                    {
+                        <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                    }
+                    </p>
+                </div>
                 <div className="seven">
                     <p>
                     <section>
@@ -156,9 +181,9 @@ class Navbar extends Component {
                     <h3>Client</h3>
                     </header>
                     <section style={{textAlign:'center'}}>
-                        <input type="text" placeholder=" NAME" style={{width:'65%',height: 34,border:0,margin: '11px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
-                        <input type="text" placeholder=" EMAIL" style={{width:'65%',height: 34,border:0,margin: '11px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
-                        <input type="text" placeholder=" SUBJECT" style={{width:'65%',height: 34,border:0,margin: '11px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
+                        <input type="text" placeholder=" NAME" style={{width:'77%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
+                        <input type="text" placeholder=" EMAIL" style={{width:'77%',height: 34,border:0,margin: '30px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
+                        <input type="text" placeholder=" SUBJECT" style={{width:'77%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
                     </section>
                     </form>
                     </p>
@@ -170,10 +195,12 @@ class Navbar extends Component {
                     <h3>Client</h3>
                     </header>
                     <section className="textarea-section" style={{textAlign:'center'}}>
-                        <textarea placeholder=" write a message here.." style={{width:'65%',height: '205px',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
+                        <textarea placeholder=" write a message here.." style={{width:'77%',height: '115px',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
                     </section>
                     <section style={{textAlign:'center'}}>
+                    {
                         <input type="submit" value="SUBMIT" style={{color:'#fff',fontWeight:700,width: '150px',height: '42px',background: '#e14800',outline: 0,border: 0,borderRadius:4}}/>
+                    }
                     </section>
                     </form>
                     </p>

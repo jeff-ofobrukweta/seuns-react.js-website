@@ -13,10 +13,10 @@ class App extends Component {
   }
 
   render() {
-    const {loading} = this.state;
-    if(loading){
-      return <Loader/>;
-    }
+    // const {loading} = this.state;
+    // if(loading){
+    //   return <Loader/>;
+    // }
     return (
       <div className="App">
         <Navbar/>
