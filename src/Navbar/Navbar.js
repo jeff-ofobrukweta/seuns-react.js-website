@@ -168,11 +168,13 @@ class Navbar extends Component {
                 <div className="ten">
                     <p>
                     <form>
-                    <header style={{margin: '11px 101px'}}>
-                    <h2>LEARN MORE</h2>
-                    <h3>Project</h3>
-                    <h3>Client</h3>
-                    </header>
+                    <span className="ten-hi">
+                        <header style={{margin: '11px 101px'}}>
+                        <h2>LEARN MORE</h2>
+                        <h3>Project</h3>
+                        <h3>Client</h3>
+                        </header>
+                    </span>
                     <section style={{textAlign:'center'}}>
                         <input type="text" placeholder=" NAME" style={{width:'77%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
                         <input type="text" placeholder=" EMAIL" style={{width:'77%',height: 34,border:0,margin: '30px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>

@@ -63,52 +63,52 @@ blockquote {
 }
 .one{
     grid-column:1 / 4;
-    grid-row:1 / 6;
+    grid-row:1 / 8;
 }
 .two{
   grid-column:1 / 2;
-  grid-row:6 / 8;
+  grid-row:8 / 10;
 }
 .three{
   border: 1px solid #000;
   grid-column:2 / 3;
-  grid-row:6 / 8;
+  grid-row:8 / 10;
 }
 .four{
   border: 1px solid #000;
   grid-column:3 / 4;
-  grid-row:6 / 8;
+  grid-row:8 / 10;
 }
 
 .five{
   border: 1px solid #000;
   grid-column:1 / 2;
-    grid-row:8 / 10;
+    grid-row:10 / 12;
 }
 .six{
     grid-column:2 / 4;
-    grid-row:8 / 10;
+    grid-row:10 / 12;
 }
 .seven{
   grid-column:1 / 4;
-  grid-row:10 / 12;
+  grid-row:12 / 14;
 }
 .eight{
   grid-column:1 / 4;
-  grid-row:12 / 14;
+  grid-row:14 / 16;
 }
 
 .nine{
   grid-column:1 / 4;
-  grid-row:14 / 16;
+  grid-row:16 / 18;
 }
 .ten{
   grid-column:1 / 4;
-  grid-row:16 / 20;
+  grid-row:18 / 22;
 }
 .eleven{
   grid-column:1 / 4;
-  grid-row:20 / 23;
+  grid-row:22 / 24;
 }
 /* the nested-region for the first region ie-Nested is grid -1 nested */
 .Nested{
