@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
 import Logo from '../images/landing.jpg';
-import icecream from '../images/icecream.jpg';
+import icecream from '../images/errorpage.png';
 import Desk from '../images/Data.png';
 import City from '../images/city.png';
+import Chat from '../images/chat.png';
 import Grid from '../Grid/Grid';
 import Loader from '../Loader/Loader';
+import Appanimate from './text';
 import './Navbar.css';
 
 class Navbar extends Component {
@@ -58,9 +60,10 @@ class Navbar extends Component {
                     </header>
                     <div className="Nested">
                     <p className="first">
-                        <div className="nested-A">
-                            <h2  class="text-write2" style={{fontSize: '32px',lineHeight: '57px'}}><b style={{fontWeight:1000}}><span>WE PROVIDE</span> <p class="text-write" style={{color:'#e14800',fontWeight:1000,position:'relative'}}>INFORMATION.</p></b></h2> 
-                            <h2 style={{fontSize: '32px',marginBottom:'34px'}}>DESIGNED TO SUPPORT DEVELOPMENT</h2>
+                        <div className="nested-A"> 
+                            <h2 style={{fontSize: '32px',marginBottom:'34px'}}>
+                            <b style={{fontWeight:1000}}><span>WE PROVIDE <span className="info" style={{color:'#e14800',fontWeight:1000,position:'relative'}}>INFORMATION</span></span><Appanimate className="Appanimate-inner"/></b><br/>
+                            DESIGNED TO SUPPORT DEVELOPMENT</h2>
                         </div>
                         <div className="nested-A" id="orange" style={{borderBottom:'5px solid #e14800',width:'5%'}}>
                         </div>

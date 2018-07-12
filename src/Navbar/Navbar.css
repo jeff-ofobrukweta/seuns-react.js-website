@@ -41,6 +41,9 @@ blockquote {
 	font-weight: 400;
 	line-height: 30px;
 }
+.info{
+  display:none;
+}
 .Navbar{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -118,7 +121,7 @@ blockquote {
   grid-template-columns:1fr 1fr;
   grid-template-rows: repeat(1,minmax(300px,auto));
   align-items:center;
-  grid-gap: 1px;
+  grid-gap: 10px;
 }
 .Nested p{
  /* border: 1px solid #000; */
@@ -130,20 +133,20 @@ blockquote {
   grid-template-columns:1fr;
   grid-template-rows: repeat(1,minmax(300px,auto));
   align-items:start;
-  grid-gap: 1px;
+  grid-gap: 10px;
 }
 .two p{
- border: 1px solid #000;
+ /* border: 1px solid #000; */
  padding: 1px;
  margin: 0px;
 }
 .six{
-  border: 1px solid #000;
+  /* border: 1px solid #000; */
   display: grid;
   grid-template-columns:1fr;
   grid-template-rows: repeat(1,minmax(300px,auto));
   align-items:start;
-  grid-gap: 1px;
+  /* grid-gap: 10px; */
 }
 .six p{
  /* border: 1px solid #000; */
@@ -156,7 +159,7 @@ blockquote {
   grid-template-columns:1fr 1fr;
   grid-template-rows: repeat(1,minmax(600px,auto));
   align-items:center;
-  grid-gap: 1px;
+  /* grid-gap: 10px; */
 }
 .seven p{
  /* border: 1px solid #000; */
@@ -168,7 +171,7 @@ blockquote {
   grid-template-columns:1fr 1fr;
   /* grid-template-rows: repeat(1,minmax(600px,auto)); */
   align-items:center;
-  /* grid-gap: 1px; */
+  /* grid-gap: 10px; */
 }
 .eight p{
  /* border: 1px solid #000; */
@@ -180,7 +183,7 @@ blockquote {
   grid-template-columns:1fr;
   grid-template-rows: repeat(1,minmax(300px,auto));
   align-items:center;
-  /* grid-gap: 1px; */
+  /* grid-gap: 10px; */
 }
 .nine p{
  /* border: 1px solid #000; */
@@ -193,7 +196,7 @@ blockquote {
   grid-template-columns:1fr 1fr;
   grid-template-rows: repeat(1,minmax(300px,auto));
   align-items:center;
-  /* grid-gap: 1px; */
+  /* grid-gap: 10px; */
 }
 .ten p{
  /* border: 1px solid #000; */
@@ -206,7 +209,7 @@ blockquote {
   grid-template-columns:1fr 1fr 1fr;
   grid-template-rows: repeat(1,minmax(300px,auto));
   align-items:center;
-  /* grid-gap: 1px; */
+  /* grid-gap: 10px; */
 }
 .eleven p{
  background: #ccc;
@@ -260,6 +263,17 @@ blockquote {
     font-size: 1.1em;
   }
   /* For no mobile menu on desktop */
+  @media screen and (max-width: 704px) {
+    .info{
+      display:inline-flex;
+    }
+    .text-write{
+      display:none !important;
+    }
+    .Appanimate{
+      display:none !important;
+    }
+  }
   @media screen and (min-width: 1024px) {
     .navigation {
       display: flex;
@@ -436,21 +450,21 @@ blockquote {
     /* top:50%;
     left:0%; */
     width:50%;
-    margin:0 0px;
-    border-right:2px solid #000000;
+    margin:0 10px;
+    border-right:1px solid hsl(0, 9%, 85%);
     font-size:100%;
     text-align: center;
     overflow: hidden;
-    transform:translateY(-100%);
+    transform:translateY(-71%);
   }
   .text-write{
-    -webkit-animation: typewriter 4s steps(500) 1s 1 normal both, blinkTextCursor 400ms steps(400) infinite normal;
+    -webkit-animation: typewriter 4s steps(500) 1s 1 normal both, blinkTextCursor 400ms steps(300) infinite normal;
     animation: typewriter 4s steps(500) 1s 1 normal both,
                blinkTextCursor 500ms steps(400) infinite normal;
   }
   @keyframes typewriter{
-    from{width:0%;}
-    to{width:96%}
+    from{width:0%;opacity:0}
+    to{width:95%;}
   }
   @keyframes blinkTextCursor{
     from {border-right-color:rgb(255, 255, 255) !important;}
