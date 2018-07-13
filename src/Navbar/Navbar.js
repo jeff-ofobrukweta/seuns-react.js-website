@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Logo from '../images/landing.jpg';
-import icecream from '../images/errorpage.png';
+import icecream from '../images/errorpagegif.gif';
 import Desk from '../images/Data.png';
 import City from '../images/city.png';
 import Chat from '../images/chat.png';
@@ -44,7 +44,7 @@ class Navbar extends Component {
                     <header>
                     <nav className="navigation">
                     <span className="navbar-toggle">
-                    <i className="fa fa-bars fa-1x" style={{margin:'20px 30px'}}></i>
+                    <i className="fa fa-bars fa-1x" style={{margin:'20px 10px'}}></i>
                     </span>
                     <a href="#" className="logo"><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700}}/></a>
                         <ul id="main-nav">
@@ -96,8 +96,8 @@ class Navbar extends Component {
                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
                 </div>
                 <div className="six">
-                    <p className="six-p">
-                        <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                    <p className="six-p" style={{display:'flex'}}>
+                        <img style={{width:'100%',height:'434.88px',objectFit:"cover",flexGrow:1}} src={icecream} alt="png"/>
                     </p>
                 </div>
                 <div className="seven">

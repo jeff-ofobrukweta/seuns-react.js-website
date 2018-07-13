@@ -464,10 +464,10 @@ blockquote {
   }
   @keyframes typewriter{
     from{width:0%;opacity:0}
-    to{width:95%;}
+    to{width:95%;border-right:1px solid transparent;}
   }
   @keyframes blinkTextCursor{
     from {border-right-color:rgb(255, 255, 255) !important;}
-    to {border-right-color: transparent;}
+    to {border-right-color: transparent !important;}
   }
 
