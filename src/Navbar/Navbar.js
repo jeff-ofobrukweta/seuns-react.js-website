@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Logo from '../images/landing.jpg';
-import icecream from '../images/errorpagegif.gif';
+import icecream from '../images/hallway.jpg';
 import Desk from '../images/Data.png';
 import City from '../images/city.png';
 import Chat from '../images/chat.png';
