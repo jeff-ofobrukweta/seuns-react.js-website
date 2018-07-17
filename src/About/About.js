@@ -6,60 +6,22 @@ import City from '../images/city.png';
 import Logolanding from '../images/icecream.jpg';
 import Appanimate from '../Navbar/text';
 import Loader from '../Loader/Loader';
+import Naviconbar from '../Naviconbar/Naviconbar';
 import './About.css';
 
 class About extends Component {
-    constructor(props){
-        super(props);
-        this.state ={
-            isToggleOn:true
-        }
-        this.handleClicktoogle = this.handleClicktoogle.bind(this);
-    }
-
-    handleClicktoogle=()=>{
-        this.setState(prevState => ({
-            isToggleOn: !prevState.isToggleOn
-          }));
-    }
   render() {
-    const classes = [];
-      const burgerSign = [];
-      if(this.state.isToggleOn==true){
-        classes.push('display');
-        burgerSign.push('fa fa-bars fa-1x');
-      }else
-      {
-        classes.push('');
-         burgerSign.push('fa fa-close fa-1x');
-      }
     return (
       <div className="About-parent-container">
       <Loader/>
         <div className="one-about">
-            <header>
-            <nav className="navigation">
-            <span className="navbar-toggle">
-            <i className="fa fa-bars fa-1x" style={{margin:'20px 10px'}}></i>
-            </span>
-            <a href="#" className="logo"><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700}}/></a>
-                <ul id="main-nav">
-                    <li className={classes}><a className="nav-item">About Us</a></li>
-                    <li className={classes}><a className="nav-item">Service</a></li>
-                    <li className={classes}><a className="nav-item">Project</a></li>
-                    <li><a className="nav-item">Contact Us</a></li>
-                    <li><a className="nav-item">
-                    <i className={burgerSign} onClick={this.handleClicktoogle}></i>
-                    </a></li>
-                </ul>
-            </nav>
-            </header>
+            <Naviconbar/>
             <div className="Nested-about">
             <p className="first-about">
                 <div className="nested-A"> 
                     <h2 style={{fontSize: '32px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
                 </div>
-                <div className="nested-A" id="orange" style={{width: '70%',position: 'relative',left: '15%',marginTop:30,marginBottom:30,borderBottom:'5px solid #e14800'}}></div>
+                <div className="nested-A" id="orange" style={{width: '50%',position: 'relative',left: '25%',marginTop:30,marginBottom:30,borderBottom:'2px solid #e14800'}}></div>
                 <div className="nested-A">
                     <section style={{fontWeight:500,fontSize:21,wordSpacing:1}}>
                         Application of developed data infrastructure,information<br/>
@@ -72,12 +34,12 @@ class About extends Component {
         <div className="two-about">
          <p style={{textAlign:'center',marginTop:'40px'}}>
             <section>
-            <img src={Desk} alt="image-desktop" style={{position:'relative',width:'56px'}} className="icon-animate"/><br/>
+            <img src={Desk} alt="image-desktop" style={{position:'relative',width:'50px'}} className="icon-animate"/><br/>
             <h2>
                DATA MANAGEMENT, INFORMATION MANAGEMENT<br/>
                AND COMMUNICATIONS.
             </h2>
-            <div style={{width: '50%',position: 'relative',left: '25%',marginTop:10,borderBottom:'3px solid red'}}></div>
+            <div style={{width: '50%',position: 'relative',left: '25%',marginTop:10,borderBottom:'2px solid red'}}></div>
             </section>
             <section style={{marginTop:'20px'}}>
             Application of developed data infrastructure,information<br/>
@@ -163,12 +125,12 @@ class About extends Component {
         <div className="four-about">
             <p style={{textAlign:'center',marginTop:'40px'}}>
             <section>
-            <img src={City} alt="image-desktop" style={{position:'relative',width:'56px'}}  className="icon-animate"/><br/>
+            <img src={City} alt="image-desktop" style={{position:'relative',width:'50px'}}  className="icon-animate"/><br/>
             <h2>
             HEALTH SETTLEMENT <br/>
             AND ENVIROMENT.
             </h2>
-            <div style={{width: '50%',position: 'relative',left: '25%',marginTop:10,borderBottom:'3px solid red'}}></div>
+            <div style={{width: '50%',position: 'relative',left: '25%',marginTop:10,borderBottom:'2px solid red'}}></div>
             </section>
             <section style={{marginTop:'20px'}}>
             Application of developed data infrastructure,information<br/>
@@ -271,14 +233,16 @@ class About extends Component {
                             border: '0px',
                             borderRadius: '4px'}}/>
                         </section>
-                        <div style={{width: '80%',position: 'relative',left: '10%',marginTop:10,borderBottom:'3px solid red'}}></div>
+                        <div style={{width: '80%',position: 'relative',left: '10%',marginTop:10,borderBottom:'2px solid red'}}></div>
         </p>
         </div>
         <div className="seven-about">
             <p>
-                <span className="ten-hi">
-                    <header style={{margin: '11px 101px'}}>
-                   
+            <span className="ten-hi" style={{textAlign: 'left'}}>
+                    <header style={{margin: '11px 20%'}}>
+                        <h2>ABOUT US</h2><br/>
+                        About Metronome<br/>
+                        Work Process
                     </header>
                 </span>
                 <section style={{textAlign:'center'}}>
@@ -290,10 +254,12 @@ class About extends Component {
             <p>
                <label>
                <form>
-               <span className="ten-hi">
-                   <header style={{margin: '11px 101px'}}>
-                   
-                   </header>
+               <span className="ten-hi" style={{textAlign: 'right'}}>
+               <header style={{margin: '11px 20%'}}>
+                    <h2>ABOUT US</h2><br/>
+                    About Metronome<br/>
+                    Work Process
+               </header>
                </span>
                <section style={{textAlign:'center'}}>
                <section className="textarea-section" style={{textAlign:'center'}}>

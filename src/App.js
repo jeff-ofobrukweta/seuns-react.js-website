@@ -4,6 +4,7 @@ import Navbar from './Navbar/Navbar';
 import Loader from './Loader/Loader';
 import Services from './About/About';
 import {Route,Switch,Link} from 'react-router-dom';
+import About from './Real-Aboutpage/Aboutpage';
 import './App.css';
 
 class App extends Component {
@@ -24,6 +25,7 @@ class App extends Component {
       <Switch>
       <Route path="/" exact component={Navbar}/>
       <Route path="/services" exact component={Services}/>
+      <Route path="/about" exact component={About}/>
       {
         // {this.state.auth? <Route path="/landing" exact component={AsyncMaterialCard}/>:null}
       }

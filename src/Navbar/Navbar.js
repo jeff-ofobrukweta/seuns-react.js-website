@@ -7,57 +7,20 @@ import Chat from '../images/chat.png';
 import Grid from '../Grid/Grid';
 import Loader from '../Loader/Loader';
 import Appanimate from './text';
+import sketch from '../images/sketch.jpg';
+import Navbaricon from '../Naviconbar/Naviconbar';
 import './Navbar.css';
+import Naviconbar from '../Naviconbar/Naviconbar';
 
 class Navbar extends Component {
-    constructor(props){
-        super(props);
-        this.state ={
-            isToggleOn:true
-        }
-        this.handleClicktoogle = this.handleClicktoogle.bind(this);
-    }
-
-    handleClicktoogle=()=>{
-        this.setState(prevState => ({
-            isToggleOn: !prevState.isToggleOn
-          }));
-    }
-    
   render() {
-      const classes = [];
-      const burgerSign = [];
-      if(this.state.isToggleOn==true){
-        classes.push('display');
-        burgerSign.push('fa fa-bars fa-1x');
-      }else
-      {
-        classes.push('');
-         burgerSign.push('fa fa-close fa-1x');
-      }
     return (
         <div id="wrapper">
         <div className="section-grid-1">
         <Loader/>
         <div className="Navbar">
                 <div className="one">
-                    <header>
-                    <nav className="navigation">
-                    <span className="navbar-toggle">
-                    <i className="fa fa-bars fa-1x" style={{margin:'20px 10px'}}></i>
-                    </span>
-                    <a href="#" className="logo"><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700}}/></a>
-                        <ul id="main-nav">
-                            <li className={classes}><a className="nav-item">About Us</a></li>
-                            <li className={classes}><a className="nav-item">Service</a></li>
-                            <li className={classes}><a className="nav-item">Project</a></li>
-                            <li><a className="nav-item">Contact Us</a></li>
-                            <li><a className="nav-item">
-                            <i className={burgerSign} onClick={this.handleClicktoogle}></i>
-                            </a></li>
-                        </ul>
-                    </nav>
-                    </header>
+                    <Naviconbar/>
                     <div className="Nested">
                     <p className="first">
                         <div className="nested-A"> 
@@ -83,21 +46,21 @@ class Navbar extends Component {
                 </div>
                 <div className="two">
                 <p className="two-p">
-                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={sketch} alt="png"/>
                 </p>
                 </div>
                 <div className="three">
                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
                 </div>
                 <div className="four">
-                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={sketch} alt="png"/>
                 </div>
                 <div className="five">
                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
                 </div>
                 <div className="six">
                     <p className="six-p" style={{display:'flex'}}>
-                        <img style={{width:'100%',height:'434.88px',objectFit:"cover",flexGrow:1}} src={icecream} alt="png"/>
+                        <img style={{width:'100%',height:'434.88px',objectFit:"cover",flexGrow:1}} src={sketch} alt="png"/>
                     </p>
                 </div>
                 <div className="seven">
@@ -114,7 +77,7 @@ class Navbar extends Component {
                     </p>
                     <p>
                         <section>
-                        <img src={Desk} alt="image-desktop" style={{position:'relative',width:'60px'}}/><br/>
+                        <img src={Desk} alt="image-desktop" style={{position:'relative',width:'50px'}}/><br/>
                         <h2 style={{fontWeight:'700'}}>Data Management, Information management<br/>and communication</h2>
                         </section>
                         <section style={{marginTop:'20px'}}>
@@ -133,7 +96,7 @@ class Navbar extends Component {
                     </p>
                     <p>
                         <section>
-                        <img src={City} alt="image-castle" style={{position:'relative',width:'60px'}}/><br/>
+                        <img src={City} alt="image-castle" style={{position:'relative',width:'50px'}}/><br/>
                         <h2 style={{fontWeight:'700'}}>Human Settlement and Enviroment</h2>
                         </section>
                         <section style={{marginTop:'20px'}}>
@@ -167,12 +130,16 @@ class Navbar extends Component {
                 </div>
                 <div className="ten">
                         <p>
-                        <span className="ten-hi">
-                            <header style={{margin: '11px 101px'}}>
-                        
+                        <span className="ten-hi"  style={{textAlign: 'left'}}>
+                            <header style={{margin: '11px 20%'}}>
+                                <section>
+                                    <h2>LEARN MORE</h2><br/>
+                                    Project<br/>
+                                    Client
+                                </section>
                             </header>
                         </span>
-                        <section style={{textAlign:'center'}}>
+                        <section style={{textAlign:'center',margin:'25px 0px'}}>
                             <input type="text" placeholder=" NAME" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
                             <input type="text" placeholder=" EMAIL" style={{width:'60%',height: 34,border:0,margin: '30px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
                             <input type="text" placeholder=" SUBJECT" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
@@ -181,12 +148,14 @@ class Navbar extends Component {
                     <p>
                     <label>
                     <form>
-                    <span className="ten-hi">
-                        <header style={{margin: '11px 101px'}}>
-                        
+                    <span className="ten-hi" style={{textAlign: 'right'}}>
+                        <header style={{margin: '11px 20%'}}>
+                        <h2>ABOUT US</h2><br/>
+                            About Metronome<br/>
+                            Work Process
                         </header>
                     </span>
-                    <section style={{textAlign:'center'}}>
+                    <section style={{textAlign:'center',margin:'25px 0px'}}>
                     <section className="textarea-section" style={{textAlign:'center'}}>
                     <textarea placeholder=" write a message here.." style={{width:'60%',height: '115px',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
                 </section>
