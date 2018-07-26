@@ -1,7 +1,7 @@
 .Navbar-realabout{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    grid-template-rows: repeat(19,minmax(130px,auto));
+    grid-template-rows: repeat(20,minmax(130px,auto));
     grid-gap:1px;
     max-width: 100%;
     margin:0px auto;
@@ -21,37 +21,38 @@
 }
 .realabout-two{
   grid-column:1 / 4;
-  grid-row:8 / 10;
+  grid-row:8 / 11;
 }
 .realabout-three{
     grid-column:1 / 4;
-    grid-row:10 / 12;
+    grid-row:11 / 14;
 }
 .realabout-four{
     grid-column:1 / 4;
-    grid-row:12 / 14;
+    grid-row:14 / 17;
 }
 .realabout-five{
     grid-column:1 / 4;
-    grid-row:14 / 16;
+    grid-row:17 / 20;
 }
 .realabout-six{
     grid-column:1 / 4;
-    grid-row:16 / 18;
+    grid-row:20 / 22;
 }
 .realabout-seven{
     grid-column:1 / 4;
-    grid-row:18 / 20;
+    grid-row:22 / 24;
 }
 
 
 /* nested */
 .realabout-one{
-    /* background: url('../images/hallway.jpg') !important; */
+    /* background: url('../images/error_missing.svg') !important; */
     text-align: center;
     background-repeat: no-repeat !important;
     background-size: cover;
     width:100%;
+    min-height: 90%;
     z-index: 1 !important;
     display: grid;
     grid-template-columns:1fr;
@@ -79,7 +80,7 @@
    margin: 0px;
   }
   .realabout-three{
-    background: #ccc;
+    /* background: #ccc; */
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: repeat(1,minmax(300px,auto));
@@ -98,7 +99,7 @@
     grid-template-columns:1fr;
     grid-template-rows: repeat(1,minmax(300px,auto));
     align-items:center;
-    grid-gap: 10px;
+    grid-gap: 0px;
   }
   .realabout-four p{
    text-align: right;
@@ -112,7 +113,7 @@
     grid-template-columns:1fr;
     grid-template-rows: repeat(1,minmax(300px,auto));
     align-items:center;
-    grid-gap: 10px;
+    grid-gap: 0px;
   }
   .realabout-five p{
    text-align: right;
@@ -121,7 +122,7 @@
    margin: 0px;
   }
   .realabout-seven{
-    /* background: #ccc; */
+    background: #ccc;
     padding: 20px 81px !important;
     display: grid;
     grid-template-columns:1fr 1fr 1fr;
@@ -141,7 +142,7 @@
     grid-template-columns:1fr 1fr;
     grid-template-rows: repeat(1,minmax(300px,auto));
     justify-content:center;
-    background: #666666;
+    background: #ffffff;
     /* grid-gap: 10px; */
   }
   .realabout-six p{

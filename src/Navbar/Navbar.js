@@ -22,10 +22,10 @@ class Navbar extends Component {
                 <div className="one">
                     <Naviconbar/>
                     <div className="Nested">
-                    <p className="first">
+                    <p className="first" style={{position: 'relative',margin: '15% 3.5%'}}>
                         <div className="nested-A"> 
                             <h2 style={{fontSize: '32px',marginBottom:'34px'}}>
-                            <b style={{fontWeight:1000}}><span>WE PROVIDE <span className="info" style={{color:'#e14800',fontWeight:1000,position:'relative'}}>INFORMATION</span></span><Appanimate className="Appanimate-inner"/></b><br/>
+                            <b style={{fontWeight:1000}}><span>WE  PROVIDE <span className="info" style={{color:'#e14800',fontWeight:1000,position:'relative',fontWeight:'bold'}}>INFORMATION</span></span><Appanimate className="Appanimate-inner"/></b><br/>
                             DESIGNED TO SUPPORT DEVELOPMENT</h2>
                         </div>
                         <div className="nested-A" id="orange" style={{borderBottom:'5px solid #e14800',width:'5%'}}>
@@ -38,30 +38,38 @@ class Navbar extends Component {
                         </div>
                     </p>
                         
-                            <p className="second">
-                                <img style={{width:'100%'}} src={Logo} alt="png" className="logo-landing"/>
+                            <p className="second">   
+                            <img style={{width:'100%'}} src={Logo} alt="png" className="logo-landing"/>
                             </p>
                     
                     </div>
                 </div>
+                <div className="parent-container-two-six">
                 <div className="two">
-                <p className="two-p">
-                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={sketch} alt="png"/>
-                </p>
+                <div>
+                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                </div>
                 </div>
                 <div className="three">
-                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                    <div>
+                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={sketch} alt="png"/>
+                    </div>
                 </div>
                 <div className="four">
-                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={sketch} alt="png"/>
+                    <div>
+                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                    </div>
                 </div>
                 <div className="five">
+                    <div>
                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                    </div>
                 </div>
                 <div className="six">
-                    <p className="six-p" style={{display:'flex'}}>
-                        <img style={{width:'100%',height:'434.88px',objectFit:"cover",flexGrow:1}} src={sketch} alt="png"/>
-                    </p>
+                    <div>
+                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={sketch} alt="png"/>
+                    </div>
+                </div>
                 </div>
                 <div className="seven">
                     <p>
@@ -140,9 +148,9 @@ class Navbar extends Component {
                             </header>
                         </span>
                         <section style={{textAlign:'center',margin:'25px 0px'}}>
-                            <input type="text" placeholder=" NAME" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
-                            <input type="text" placeholder=" EMAIL" style={{width:'60%',height: 34,border:0,margin: '30px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
-                            <input type="text" placeholder=" SUBJECT" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
+                            <input type="text" placeholder=" NAME" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
+                            <input type="text" placeholder=" EMAIL" style={{width:'60%',height: 34,border:0,margin: '30px 0px',backgroundColor:'#ccc',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
+                            <input type="text" placeholder=" SUBJECT" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
                         </section>
                     </p>
                     <p>
@@ -157,7 +165,7 @@ class Navbar extends Component {
                     </span>
                     <section style={{textAlign:'center',margin:'25px 0px'}}>
                     <section className="textarea-section" style={{textAlign:'center'}}>
-                    <textarea placeholder=" write a message here.." style={{width:'60%',height: '115px',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
+                    <textarea placeholder=" write a message here.." style={{width:'60%',height:'115px',padding:'0px 2%',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
                 </section>
                         <section style={{textAlign:'center'}}>
                         {

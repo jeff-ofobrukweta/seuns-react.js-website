@@ -13,7 +13,7 @@ class Aboutpage extends Component {
             <div className="realabout-one">
                 <p>
                 <div className="nested-A"> 
-                    <h2 style={{fontSize: '32px',fontWeight:'bold'}}>RYTHM, CONTINUITY, CONSISTENCY</h2>
+                    <h2 style={{fontSize: '32px',fontWeight:'bold',lineHeight: 'calc(100%)'}}>RYTHM, CONTINUITY, CONSISTENCY</h2>
                 </div>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #e14800',width:'50%',margin:'20px 25%'}}></div>
                 <section>
@@ -83,7 +83,7 @@ class Aboutpage extends Component {
                     border: '0px',
                     borderRadius: '4px'}}/>
                 </section>
-                <div style={{width: '80%',position: 'relative',left: '10%',marginTop:10,borderBottom:'3px solid red'}}></div>
+                <div style={{width: '80%',position: 'relative',left: '10%',marginTop:10,borderBottom:'3px solid #e14800'}}></div>
             </p>
             </div>
             <div className="realabout-six">
@@ -96,9 +96,9 @@ class Aboutpage extends Component {
                     </header>
                 </span>
                 <section style={{textAlign:'center'}}>
-                    <input type="text" placeholder=" NAME" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
-                    <input type="text" placeholder=" EMAIL" style={{width:'60%',height: 34,border:0,margin: '30px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
-                    <input type="text" placeholder=" SUBJECT" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
+                    <input type="text" placeholder=" NAME" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
+                    <input type="text" placeholder=" EMAIL" style={{width:'60%',height: 34,border:0,margin: '30px 0px',backgroundColor:'#ccc',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
+                    <input type="text" placeholder=" SUBJECT" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
                 </section>
             </p>
             <p>
@@ -113,7 +113,7 @@ class Aboutpage extends Component {
                </span>
                <section style={{textAlign:'center'}}>
                <section className="textarea-section" style={{textAlign:'center'}}>
-               <textarea placeholder=" write a message here.." style={{width:'60%',height: '115px',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
+               <textarea placeholder=" write a message here.." style={{width:'60%',padding: '0px 2%',height: '115px',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
            </section>
                 <section style={{textAlign:'center'}}>
                 {

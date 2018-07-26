@@ -4,9 +4,16 @@ import Logo from '../images/landing.jpg';
 import Desk from '../images/Data.png';
 import City from '../images/city.png';
 import Logolanding from '../images/icecream.jpg';
+import First from '../images/Advanced.png';
+import Secound from '../images/secound.png';
+import Third from '../images/Geospatial_Icon.png';
+import Fourth from '../images/Plan.png';
+import Fifth from '../images/Tree.png';
+import Sixth from '../images/Forma1.png';
 import Appanimate from '../Navbar/text';
 import Loader from '../Loader/Loader';
 import Naviconbar from '../Naviconbar/Naviconbar';
+
 import './About.css';
 
 class About extends Component {
@@ -19,11 +26,13 @@ class About extends Component {
             <div className="Nested-about">
             <p className="first-about">
                 <div className="nested-A"> 
-                    <h2 style={{fontSize: '32px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
+                    <h2 style={{fontSize: '30px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
                 </div>
-                <div className="nested-A" id="orange" style={{width: '50%',position: 'relative',left: '25%',marginTop:30,marginBottom:30,borderBottom:'2px solid #e14800'}}></div>
+                <div className="nested-A" id="orange" style={{width: '35%',position: 'relative',left: '32%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
                 <div className="nested-A">
-                    <section style={{fontWeight:500,fontSize:21,wordSpacing:1}}>
+                    <section style={{fontWeight:500,fontSize:13,fontWeight: 800,wordSpacing:0}}>
+                        Application of developed data infrastructure,information<br/>
+                        management and communication to improve Human settlement and enviroment.<br/>
                         Application of developed data infrastructure,information<br/>
                         management and communication to improve Human settlement and enviroment.
                     </section>
@@ -63,7 +72,7 @@ class About extends Component {
                         fontWeight:'bold',
                         color:'#fff'
                         }}>
-                        <img src={City} alt="image-desktop" style={{position:'relative',width:'46px'}}  className="icon-animate"/><br/>
+                        <img src={First} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                     Advanced geographic information<br/>analysis & spartial Enablements</section>
                     <section style={{margin:'20px'}}>
                     Application of developed data infrastructure,information<br/>
@@ -87,7 +96,7 @@ class About extends Component {
                             fontWeight:'bold',
                             color:'#fff'
                             }}>
-                            <img src={City} alt="image-desktop" style={{position:'relative',width:'46px'}}  className="icon-animate"/><br/>
+                            <img src={Secound} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                         Real Time Analysis &<br/>Projections</section>
                         <section style={{margin:'20px'}}>
                         Application of developed data infrastructure,information<br/>
@@ -111,7 +120,7 @@ class About extends Component {
                     fontWeight:'bold',
                     color:'#fff'
                     }}>
-                    <img src={City} alt="image-desktop" style={{position:'relative',width:'46px'}}  className="icon-animate"/><br/>
+                    <img src={Third} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                     Geospatial Web Services &<br/>Use case Applications</section>
                     <section style={{margin:'20px'}}>
                     Application of developed data infrastructure,information<br/>
@@ -139,7 +148,7 @@ class About extends Component {
             </section>
         </p>
         </div>
-        <div className="five-about" style={{textAlign:'center'}}>
+        <div className="five-about" style={{textAlign:'center',paddingBottom:' 5%'}}>
             <p>
                 <section>
                     <div class="card card-1">
@@ -154,7 +163,7 @@ class About extends Component {
                     fontWeight:'bold',
                     color:'#fff'
                     }}>
-                    <img src={City} alt="image-desktop" style={{position:'relative',width:'46px'}}  className="icon-animate"/><br/>
+                    <img src={Fourth} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                     Comprehensive &<br/>Strategic Planning</section>
                     <section style={{margin:'20px'}}>
                     Application of developed data infrastructure,information<br/>
@@ -179,7 +188,7 @@ class About extends Component {
                     fontWeight:'bold',
                     color:'#fff'
                     }}>
-                    <img src={City} alt="image-desktop" style={{position:'relative',width:'46px'}}  className="icon-animate"/><br/>
+                    <img src={Fifth} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                 Design &<br/>Enviromental Stewarship</section>
                 <section style={{margin:'20px'}}>
                 Application of developed data infrastructure,information<br/>
@@ -204,7 +213,7 @@ class About extends Component {
                     fontWeight:'bold',
                     color:'#fff'
                     }}>
-                    <img src={City} alt="image-desktop" style={{position:'relative',width:'46px'}}  className="icon-animate"/><br/>
+                    <img src={Sixth} alt="image-desktop" style={{position:'relative',width:'50px'}}  className="icon-animate"/><br/>
                 Transportation and<br/>Land Use</section>
                 <section style={{margin:'20px'}}>
                 Application of developed data infrastructure,information<br/>
@@ -246,9 +255,9 @@ class About extends Component {
                     </header>
                 </span>
                 <section style={{textAlign:'center'}}>
-                    <input type="text" placeholder=" NAME" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
-                    <input type="text" placeholder=" EMAIL" style={{width:'60%',height: 34,border:0,margin: '30px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
-                    <input type="text" placeholder=" SUBJECT" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,borderRadius:'4px'}}/>
+                    <input type="text" placeholder=" NAME" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#eee',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
+                    <input type="text" placeholder=" EMAIL" style={{width:'60%',height: 34,border:0,margin: '30px 0px',backgroundColor:'#eee',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
+                    <input type="text" placeholder=" SUBJECT" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#eee',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
                 </section>
             </p>
             <p>
@@ -263,7 +272,7 @@ class About extends Component {
                </span>
                <section style={{textAlign:'center'}}>
                <section className="textarea-section" style={{textAlign:'center'}}>
-               <textarea placeholder=" write a message here.." style={{width:'60%',height: '115px',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
+               <textarea placeholder=" write a message here.." style={{width:'60%',height: '115px',padding: '5px 2%',outline:0,backgroundColor:'#eee',border:0,borderRadius:'4px'}}/>
            </section>
                 <section style={{textAlign:'center'}}>
                 {
@@ -278,7 +287,7 @@ class About extends Component {
         <div className="eight-about" style={{padding:'20px'}}>
                 <p>
                 <section>
-                <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
+                <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',position:'relative',right:'8%',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
                 <h2>LAGOS</h2>
                 </section>
                 <section style={{marginTop:'20px',fontSize:'15px'}}>

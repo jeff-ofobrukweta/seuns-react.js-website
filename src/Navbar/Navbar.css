@@ -6,7 +6,7 @@
   .Navbar{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    grid-template-rows: repeat(21,minmax(130px,auto));
+    grid-template-rows: repeat(17,minmax(130px,auto));
     grid-gap:1px;
     max-width: 100%;
     margin:0px auto;
@@ -24,62 +24,65 @@
     grid-column:1 / 4;
     grid-row:1 / 8;
 }
-.two{
+.parent-container-two-six{
+  grid-column:1 / 4;
+  grid-row:8 /10;
+}
+
+/* .two{
   grid-column:1 / 2;
   grid-row:8 / 10;
 }
 .three{
-  /* border: 1px solid #000; */
   grid-column:2 / 3;
   grid-row:8 / 10;
 }
 .four{
-  /* border: 1px solid #000; */
   grid-column:3 / 4;
   grid-row:8 / 10;
 }
 
 .five{
-  /* border: 1px solid #000; */
   grid-column:1 / 2;
     grid-row:10 / 12;
 }
 .six{
     grid-column:2 / 4;
     grid-row:10 / 12;
-}
+} */
 .seven{
   grid-column:1 / 4;
-  grid-row:12 / 14;
+  grid-row:10 / 12;
 }
 .eight{
   grid-column:1 / 4;
-  grid-row:14 / 16;
+  grid-row:12 / 14;
 }
 
 .nine{
   grid-column:1 / 4;
-  grid-row:16 / 18;
+  grid-row:14 / 16;
 }
 .ten{
   grid-column:1 / 4;
-  grid-row:18 / 20;
+  grid-row:16 / 18;
 }
 .eleven{
   grid-column:1 / 4;
-  grid-row:20 / 22;
+  grid-row:18 / 19;
 }
 /* the nested-region for the first region ie-Nested is grid -1 nested */
 .Nested{
-  /* background: url('../images/chat.png') !important; */
+  /* background: url('../images/landing.jpg') !important; */
   background-repeat: no-repeat !important;
-  background-size: cover;
+  background-size: cover !important;
+  min-height: 90%;
   width:100%;
   z-index: 1 !important;
   display: grid;
-  grid-template-columns:1fr 1fr;
+  grid-template-columns:1fr 2fr;
   grid-template-rows: repeat(1,minmax(300px,auto));
-  align-items:center;
+  align-items:start;
   grid-gap: 10px;
 }
 .Nested p{
@@ -87,7 +90,26 @@
  padding: 20px;
  margin: 0px;
 }
-.two{
+.parent-container-two-six{
+  width: 100%;
+  margin:0 auto;
+  display:flex;
+  background: #fff;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.parent-container-two-six .two,.three,.four,.five{
+  height:400px;
+  flex-basis:33.3333%;
+  /* border: 1px solid #666666; */
+}
+.parent-container-two-six .six{
+  height:434.88px;
+  flex-basis:66.666666%;
+  /* border: 1px solid #666666; */
+}
+
+/* .two{
   display: grid;
   grid-template-columns:1fr;
   grid-template-rows: repeat(1,minmax(300px,auto));
@@ -95,10 +117,9 @@
   grid-gap: 10px;
 }
 .two p{
- /* border: 1px solid #000; */
  padding: 1px;
  margin: 0px;
-}
+} */
 .six{
   /* border: 1px solid #000; */
   display: grid;
@@ -173,7 +194,7 @@
 .eleven p{
  background: #ccc;
  /* border: 1px solid #000; */
- padding: 73px !important;
+ padding: 18% !important;
  margin: 0px;
  line-height: 30px;
 }
@@ -250,6 +271,19 @@
   }
 
   @media screen and (max-width: 800px) {
+    .parent-container-two-six{
+      width: 100%;
+      margin:0 auto;
+      display:flex;
+      background: #fff;
+      flex-wrap: wrap;
+      flex-flow: column;
+    }
+    .parent-container-two-six .two,.three,.four,.five,.six{
+      height:434.88px;
+      flex-basis:100% !important;
+      border: 1px solid #666666;
+    }
     .eleven{
       display: grid;
       grid-template-columns:1fr;
@@ -267,7 +301,7 @@
     .Navbar{
       display:grid;
       grid-template-columns:repeat(3,1fr);
-      grid-template-rows: repeat(25,minmax(130px,auto));
+      grid-template-rows: repeat(15,minmax(130px,auto));
       grid-gap:1px;
       max-width: 100%;
       margin:0px auto;
@@ -281,7 +315,7 @@
       /* background: #595050; */
   }
   .Nested{
-    /* background: url('../images/chat.png') !important; */
+    /* background: url('../images/icecream.jpg') !important; */
     background-repeat: no-repeat !important;
     background-size: cover;
     z-index: 1 !important;
@@ -300,7 +334,11 @@
       grid-column:1 / 4;
       grid-row:1 / 6;
   }
-  .two{
+  .parent-container-two-six{
+    grid-column:1 / 4;
+    grid-row:8 /10;
+  }
+  /* .two{
     grid-column:1 / 4;
     grid-row:6 / 8;
   }
@@ -320,26 +358,26 @@
   .six{
       grid-column:1 / 4;
       grid-row:14 / 16;
-  }
+  } */
   .seven{
     grid-column:1 / 4;
-    grid-row:16 / 18;
+    grid-row:10 / 12;
   }
   .eight{
     grid-column:1 / 4;
-    grid-row:18 / 20;
+    grid-row:12 / 14;
   }
   .nine{
     grid-column:1 / 4;
-    grid-row:20 / 22;
+    grid-row:14 / 16;
   }
   .ten{
     grid-column:1 / 4;
-    grid-row:22 / 24;
+    grid-row:16 / 18;
   }
   .eleven{
     grid-column:1 / 4;
-    grid-row:24 / 26;
+    grid-row:18 / 20;
   }
     /* Grid-area */
   }
@@ -407,7 +445,7 @@ blockquote {
     transform:translateY(-71%);
   }
   .text-write{
-    -webkit-animation: typewriter 4s steps(500) 1s 1 normal both, blinkTextCursor 400ms steps(300) infinite normal;
+    -webkit-animation: typewriter 3s steps(400) 1s 1 normal both, blinkTextCursor 300ms steps(200) infinite normal;
     animation: typewriter 4s steps(500) 1s 1 normal both,
                blinkTextCursor 500ms steps(400) infinite normal;
   }
@@ -416,7 +454,7 @@ blockquote {
     to{width:95%;border-right:1px solid transparent;}
   }
   @keyframes blinkTextCursor{
-    from {border-right-color:rgb(255, 255, 255) !important;}
+    from {border-right-color:rgb(245, 245, 245) !important;}
     to {border-right-color: transparent !important;}
   }
   /* buttons-transitions */

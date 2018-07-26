@@ -24,7 +24,7 @@ class Naviconbar extends Component {
             burgerSign.push('fa fa-bars fa-1x');
           }else
           {
-            classes.push('');
+             classes.push('');
              burgerSign.push('fa fa-close fa-1x');
           }
     return (
@@ -34,7 +34,7 @@ class Naviconbar extends Component {
                 <span className="navbar-toggle">
                 <i className="fa fa-bars fa-1x" style={{margin:'20px 10px'}}></i>
                 </span>
-                <a href="#" className="logo"><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700}}/></a>
+                <a href="#" className="logo"><input type="submit" value="Metronome" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700}}/></a>
                     <ul id="main-nav">
                         <li className={classes}><a className="nav-item">About Us</a></li>
                         <li className={classes}><a className="nav-item">Service</a></li>

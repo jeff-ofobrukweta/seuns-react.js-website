@@ -5,6 +5,8 @@ import Loader from './Loader/Loader';
 import Services from './About/About';
 import {Route,Switch,Link} from 'react-router-dom';
 import About from './Real-Aboutpage/Aboutpage';
+import Product from './Products/Products';
+import FlexMenu from './flex-menue/flexMenu';
 import './App.css';
 
 class App extends Component {
@@ -26,11 +28,13 @@ class App extends Component {
       <Route path="/" exact component={Navbar}/>
       <Route path="/services" exact component={Services}/>
       <Route path="/about" exact component={About}/>
+      <Route path="/work" exact component={Product}/>
       {
         // {this.state.auth? <Route path="/landing" exact component={AsyncMaterialCard}/>:null}
       }
       <Route render={()=>(<div>
                               <section>
+                              <FlexMenu/>
                               <h1 style={{color:"#585656",textAlign:"center"}}>Not found</h1>
                               <article>
                               <span>
