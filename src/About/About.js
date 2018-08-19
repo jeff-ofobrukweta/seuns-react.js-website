@@ -1,36 +1,94 @@
 import React, { Component } from 'react';
 import {Route,Switch,Link} from 'react-router-dom';
-import Logo from '../images/landing.jpg';
 import Desk from '../images/Data.png';
 import City from '../images/city.png';
 import Logolanding from '../images/icecream.jpg';
 import First from '../images/Advanced.png';
-import Secound from '../images/secound.png';
-import Third from '../images/Geospatial_Icon.png';
+import Secound from '../images/Real TIme.png';
+import Third from '../images/Geo spatial_Icon.png';
 import Fourth from '../images/Plan.png';
 import Fifth from '../images/Tree.png';
-import Sixth from '../images/Forma1.png';
+import Sixth from '../images/Forma 1.png';
 import Appanimate from '../Navbar/text';
 import Loader from '../Loader/Loader';
-import Naviconbar from '../Naviconbar/Naviconbar';
+import Navibaricon from '../flex-menue/flexMenu';
+import Messagebox from '../Grid/Grid';
+import Data from '../images/Group 6.png';
+import Information from '../images/Group 7.png';
+import Knowledge from '../images/Group 8.png';
+import Wisdom from '../images/Group 9.png';
+import axios from 'axios';
 
 import './About.css';
 
+
 class About extends Component {
+    constructor(props){
+        super(props);
+        this.state ={
+            email:'',
+            error:'',
+            flashmessageIdentifier:'',
+            emailSentmessage:''
+        }
+        this.handleChangeemail = this.handleChangeEmail.bind(this);
+        this.handlesubmitlogin = this.handleSubmitlogin.bind(this);
+    }
+
+    handleChangeEmail(event) {
+        this.setState({email: event.target.value});
+        console.log(">>>>>>>"+this.state.email);
+    }
+    handleSubmitlogin = async (event)=>{
+        event.preventDefault();
+        const flash = [];
+        const data={
+            email:this.state.email
+        }
+        await axios.post(`http://localhost:1337/findonethroughEmail`,data)
+        .then((response)=> {
+            console.log(">>>>>>>",JSON.stringify(data,null,2));
+            console.log(">>>>>>>",JSON.stringify(response,null,2));
+              if(response.status===200 && response.data.id!==null){
+                //   this.setState({info:})
+                  let messageTosendEmail = `Email has been sent,please await our response(s)`;
+                  this.setState({emailSentmessage:messageTosendEmail});
+                  console.log('----------------email--'+this.state.emailSentmessage);
+                  console.log("_____",JSON.stringify(response.data));
+                  flash.push('elementToFadeInAndOut');
+                  this.setState({email:'',flashmessageIdentifier:flash});
+                  this.props.history.push("/services");
+                  setTimeout(()=>{
+                    flash.push('display-none');
+                   this.props.history.push('/');
+                   this.props.history.push('/services');
+                  },10000);
+              }
+              else
+              {
+                this.props.history.replace("/");
+              }     
+        })
+        .catch((error)=>{
+        //   this.setState({error:true});
+          console.log(error);
+        });
+      }
   render() {
+    const {email,emailSentmessage,flashmessageIdentifier} = this.state;
     return (
       <div className="About-parent-container">
       <Loader/>
         <div className="one-about">
-            <Naviconbar/>
             <div className="Nested-about">
+            <Navibaricon/>
             <p className="first-about">
                 <div className="nested-A"> 
                     <h2 style={{fontSize: '30px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
                 </div>
-                <div className="nested-A" id="orange" style={{width: '35%',position: 'relative',left: '32%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
+                <div className="nested-A" id="orange" style={{width: '40%',position: 'relative',left: '30%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
                 <div className="nested-A">
-                    <section style={{fontWeight:500,fontSize:13,fontWeight: 800,wordSpacing:0}}>
+                    <section className="section-mobile" style={{fontWeight:500,fontSize:17,fontWeight: 800,wordSpacing:0}}>
                         Application of developed data infrastructure,information<br/>
                         management and communication to improve Human settlement and enviroment.<br/>
                         Application of developed data infrastructure,information<br/>
@@ -48,7 +106,7 @@ class About extends Component {
                DATA MANAGEMENT, INFORMATION MANAGEMENT<br/>
                AND COMMUNICATIONS.
             </h2>
-            <div style={{width: '50%',position: 'relative',left: '25%',marginTop:10,borderBottom:'2px solid red'}}></div>
+            <div style={{width: '50%',position: 'relative',left: '25%',marginTop:10,borderBottom:'2px solid #f8cbad'}}></div>
             </section>
             <section style={{marginTop:'20px'}}>
             Application of developed data infrastructure,information<br/>
@@ -68,9 +126,9 @@ class About extends Component {
                         fontSize: '16px',
                         textAlign: 'center',
                         padding: '10px 0px',
-                        background: '#666',
+                        background: '#3b3838',
                         fontWeight:'bold',
-                        color:'#fff'
+                        color:'#ecbda5'
                         }}>
                         <img src={First} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                     Advanced geographic information<br/>analysis & spartial Enablements</section>
@@ -92,9 +150,9 @@ class About extends Component {
                             fontSize: '16px',
                             textAlign: 'center',
                             padding: '10px 0px',
-                            background: '#666',
+                            background: '#3b3838',
                             fontWeight:'bold',
-                            color:'#fff'
+                            color:'#ecbda5'
                             }}>
                             <img src={Secound} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                         Real Time Analysis &<br/>Projections</section>
@@ -116,9 +174,9 @@ class About extends Component {
                     fontSize: '16px',
                     textAlign: 'center',
                     padding: '10px 0px',
-                    background: '#666',
+                    background: '#3b3838',
                     fontWeight:'bold',
-                    color:'#fff'
+                    color:'#ecbda5'
                     }}>
                     <img src={Third} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                     Geospatial Web Services &<br/>Use case Applications</section>
@@ -139,7 +197,7 @@ class About extends Component {
             HEALTH SETTLEMENT <br/>
             AND ENVIROMENT.
             </h2>
-            <div style={{width: '50%',position: 'relative',left: '25%',marginTop:10,borderBottom:'2px solid red'}}></div>
+            <div style={{width: '50%',position: 'relative',left: '25%',marginTop:10,borderBottom:'2px solid #f8cbad'}}></div>
             </section>
             <section style={{marginTop:'20px'}}>
             Application of developed data infrastructure,information<br/>
@@ -159,9 +217,9 @@ class About extends Component {
                     fontSize: '16px',
                     textAlign: 'center',
                     padding: '10px 0px',
-                    background: '#666',
+                    background: '#3b3838',
                     fontWeight:'bold',
-                    color:'#fff'
+                    color:'#ecbda5'
                     }}>
                     <img src={Fourth} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                     Comprehensive &<br/>Strategic Planning</section>
@@ -184,9 +242,9 @@ class About extends Component {
                     fontSize: '16px',
                     textAlign: 'center',
                     padding: '10px 0px',
-                    background: '#666',
+                    background: '#3b3838',
                     fontWeight:'bold',
-                    color:'#fff'
+                    color:'#ecbda5'
                     }}>
                     <img src={Fifth} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                 Design &<br/>Enviromental Stewarship</section>
@@ -209,9 +267,9 @@ class About extends Component {
                     fontSize: '16px',
                     textAlign: 'center',
                     padding: '10px 0px',
-                    background: '#666',
+                    background: '#3b3838',
                     fontWeight:'bold',
-                    color:'#fff'
+                    color:'#ecbda5'
                     }}>
                     <img src={Sixth} alt="image-desktop" style={{position:'relative',width:'50px'}}  className="icon-animate"/><br/>
                 Transportation and<br/>Land Use</section>
@@ -226,11 +284,33 @@ class About extends Component {
         </div>
         <div className="six-about">
             <p>
-            <section style={{textAlign:'center'}}>
-                        <h2 style={{fontWeight:700,fontSize:'30px',marginBottom:'22px'}}>GET THE FACTS RIGHT</h2>
-                        <section style={{fontSize:'16px',letterSpacing:'3px'}}>
-                        Lets create a world where data drives<br/>
-                        development.<br/>
+                        <section style={{textAlign:'center'}}>
+                            <section className="main-flex-container">
+                            <div className="flex-container-1">
+                                <img src={Data} href="Data" className="image"/>
+                                <div className="flex-item"><b>Data</b></div>
+                            </div>
+                            <div className="flex-container-1">
+                                <img src={Information} href="Information" className="image"/>
+                                <div className="flex-item"><b>Information</b></div>
+                            </div>
+                            <div className="flex-container-1">
+                                <img src={Knowledge} href="Knowledge" className="image"/>
+                                <div className="flex-item"><b>Knowledge</b></div>
+                            </div>
+                            <div className="flex-container-1">
+                                <img src={Wisdom} href="Wisdom" className="image"/>
+                                <div className="flex-item"><b>Wisdom</b></div>
+                            </div>
+                        </section>
+                        <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'30%',margin: '13px 35%'}}></div>
+                        <section style={{fontSize:'16px',letterSpacing:'0px'}}>
+                        <b>
+                            Lets create a world where data drives
+                            development.management and communication to improve <br/>
+                            Human settlement and enviroment.
+                            Application of developed data infrastructure,information<br/>
+                        </b>
                         </section>
                         <input type="submit" value="GET IN TOUCH" style={{color:'rgb(255, 255, 255)',margin:'10px 0px',
                             fontWeight: 700,
@@ -242,7 +322,6 @@ class About extends Component {
                             border: '0px',
                             borderRadius: '4px'}}/>
                         </section>
-                        <div style={{width: '80%',position: 'relative',left: '10%',marginTop:10,borderBottom:'2px solid red'}}></div>
         </p>
         </div>
         <div className="seven-about">
@@ -260,9 +339,10 @@ class About extends Component {
                     <input type="text" placeholder=" SUBJECT" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#eee',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
                 </section>
             </p>
+            <section  id="form">
+            <form onSubmit={this.handleSubmitlogin}>
             <p>
                <label>
-               <form>
                <span className="ten-hi" style={{textAlign: 'right'}}>
                <header style={{margin: '11px 20%'}}>
                     <h2>ABOUT US</h2><br/>
@@ -271,8 +351,11 @@ class About extends Component {
                </header>
                </span>
                <section style={{textAlign:'center'}}>
+               <Messagebox name={emailSentmessage} classidentifier={flashmessageIdentifier}/>
                <section className="textarea-section" style={{textAlign:'center'}}>
-               <textarea placeholder=" write a message here.." style={{width:'60%',height: '115px',padding: '5px 2%',outline:0,backgroundColor:'#eee',border:0,borderRadius:'4px'}}/>
+               <textarea placeholder=" write a message here.." onChange={this.handleChangeemail}
+               value={email}
+               style={{width:'60%',height: '115px',outline:0,backgroundColor:'#eee',border:0,borderRadius:'4px',padding: '0px 2%'}}/>
            </section>
                 <section style={{textAlign:'center'}}>
                 {
@@ -280,14 +363,15 @@ class About extends Component {
                 }
                 </section>
                </section>
-               </form>
                </label>
             </p>
+            </form>
+            </section>
         </div>
         <div className="eight-about" style={{padding:'20px'}}>
                 <p>
                 <section>
-                <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',position:'relative',right:'8%',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
+                <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',position:'relative',left:'0%',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
                 <h2>LAGOS</h2>
                 </section>
                 <section style={{marginTop:'20px',fontSize:'15px'}}>

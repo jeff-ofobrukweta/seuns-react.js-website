@@ -1,10 +1,68 @@
 import React, { Component } from 'react';
-import Naviconbar from '../Naviconbar/Naviconbar';
+import Naviconbar from '../flex-menue/flexMenu';
 import Loader from '../Loader/Loader';
+import Landing from '../images/Asset.svg';
+import Data from '../images/Group 6.png';
+import Information from '../images/Group 7.png';
+import Knowledge from '../images/Group 8.png';
+import Wisdom from '../images/Group 9.png';
+import Messagebox from '../Grid/Grid';
+import axios from 'axios';
 import  './Aboutpage.css';
 
 class Aboutpage extends Component {
+    constructor(props){
+        super(props);
+        this.state ={
+            email:'',
+            error:'',
+            flashmessageIdentifier:'',
+            emailSentmessage:''
+        }
+        this.handleChangeemail = this.handleChangeemail.bind(this);
+        this.handlesubmitlogin = this.handleSubmitlogin.bind(this);
+    }
+    handleChangeemail(event) {
+        this.setState({email: event.target.value});
+        console.log(">>>>>>>"+this.state.email);
+    }
+    handleSubmitlogin = async (event)=>{
+        event.preventDefault();
+        const flash = [];
+        const data={
+            email:this.state.email
+        }
+        await axios.post(`http://localhost:1337/findonethroughEmail`,data)
+        .then((response)=> {
+            console.log(">>>>>>>",JSON.stringify(data,null,2));
+            console.log(">>>>>>>",JSON.stringify(response,null,2));
+              if(response.status===200 && response.data.id!==null){
+                //   this.setState({info:})
+                  let messageTosendEmail = `Email has been sent,please await our response(s)`;
+                  this.setState({emailSentmessage:messageTosendEmail});
+                  console.log('----------------email--'+this.state.emailSentmessage);
+                  console.log("_____",JSON.stringify(response.data));
+                  flash.push('elementToFadeInAndOut');
+                  this.setState({email:'',flashmessageIdentifier:flash});
+                  this.props.history.push("/about");
+                  setTimeout(()=>{
+                    flash.push('display-none');
+                   this.props.history.push('/');
+                   this.props.history.push('/about');
+                  },10000);
+              }
+              else
+              {
+                this.props.history.replace("/");
+              }     
+        })
+        .catch((error)=>{
+        //   this.setState({error:true});
+          console.log(error);
+        });
+      }
   render() {
+    const {email,emailSentmessage,flashmessageIdentifier} = this.state;
     return (
        <div className="Navbar-realabout">
             <Loader/>
@@ -13,15 +71,22 @@ class Aboutpage extends Component {
             <div className="realabout-one">
                 <p>
                 <div className="nested-A"> 
-                    <h2 style={{fontSize: '32px',fontWeight:'bold',lineHeight: 'calc(100%)'}}>RYTHM, CONTINUITY, CONSISTENCY</h2>
+                    <h2 style={{fontSize: '32px',fontWeight:'bold',lineHeight: 'calc(100%)'}}><b>RHYTHM, CONTINUITY, CONSISTENCY</b></h2>
                 </div>
-                <div className="nested-A" id="orange" style={{borderBottom:'2px solid #e14800',width:'50%',margin:'20px 25%'}}></div>
+                <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'40%',margin:'23px 30%'}}></div>
                 <section>
-                Application of developed data infrastructure,information<br/>
-                management and communication to improve Human settlement and enviroment.
-                Application of developed data infrastructure,information<br/>
-                management and communication to improve Human settlement and enviroment.
+                <b>
+                management and communication to improve Human settlement and enviroment.<br/>
+                Application of developed data,data infrastructure,information Application<br/>
+                Application of developed data infrastructure,information,information<br/>
+                management and communication.
+                </b>
                 </section>
+                <div>
+                </div>
+                <div className="push-image">
+
+                </div>
                 </p>
             </div>
             </div>
@@ -29,7 +94,7 @@ class Aboutpage extends Component {
             <div className="realabout-two">
                 <p>
                 <h2 style={{fontSize: '28px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
-                <div className="nested-A" id="orange" style={{borderBottom:'5px solid #e14800',width:'6%',margin:'20px 94%'}}></div>
+                <div className="nested-A" id="orange" style={{borderBottom:'4px solid #f8cbad',width:'33%',margin:'20px 67%'}}></div>
                 <section>
                 Application of developed data infrastructure,information<br/>
                 management and communication to improve Human settlement and enviroment.
@@ -42,7 +107,7 @@ class Aboutpage extends Component {
             <div className="realabout-three">
                 <p>
                 <h2 style={{fontSize: '28px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
-                <div className="nested-A" id="orange" style={{borderBottom:'5px solid #e14800',width:'6%',margin:'20px 0px'}}></div>
+                <div className="nested-A" id="orange" style={{borderBottom:'4px solid #f8cbad',width:'33%',margin:'20px 0px'}}></div>
                 <section>
                 Application of developed data infrastructure,information<br/>
                 management and communication to improve Human settlement and enviroment.
@@ -55,7 +120,7 @@ class Aboutpage extends Component {
             <div className="realabout-four">
                 <p>
                 <h2 style={{fontSize: '28px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
-                <div className="nested-A" id="orange" style={{borderBottom:'5px solid #e14800',width:'6%',margin:'20px 94%'}}></div>
+                <div className="nested-A" id="orange" style={{borderBottom:'4px solid #f8cbad',width:'33%',margin:'20px 67%'}}></div>
                 <section>
                 Application of developed data infrastructure,information<br/>
                 management and communication to improve Human settlement and enviroment.
@@ -68,10 +133,32 @@ class Aboutpage extends Component {
             <div className="realabout-five">
                 <p>
                 <section style={{textAlign:'center'}}>
-                <h2 style={{fontWeight:700,fontSize:'30px',marginBottom:'22px'}}>TOGETHER FOR BETTER</h2>
-                <section style={{fontSize:'16px',letterSpacing:'3px'}}>
-                Lets create a world where data drives<br/>
-                development.<br/>
+                <section className="main-flex-container">
+                        <div className="flex-container-1">
+                            <img src={Data} href="Data" className="image"/>
+                            <div className="flex-item"><b id="mobile">Data</b></div>
+                        </div>
+                        <div className="flex-container-1">
+                            <img src={Information} href="Information" className="image"/>
+                            <div className="flex-item"><b>Information</b></div>
+                        </div>
+                        <div className="flex-container-1">
+                            <img src={Knowledge} href="Knowledge" className="image"/>
+                            <div className="flex-item"><b>Knowledge</b></div>
+                        </div>
+                        <div className="flex-container-1">
+                            <img src={Wisdom} href="Wisdom" className="image"/>
+                            <div className="flex-item"><b>Wisdom</b></div>
+                        </div>
+                </section>
+                <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'30%',margin: '13px 35%'}}></div>
+                <section style={{fontSize:'16px',letterSpacing:'0px'}}>
+                <b>
+                    Lets create a world where data drives
+                    development.management and communication to improve <br/>
+                    Human settlement and enviroment.
+                    Application of developed data infrastructure,information<br/>
+                </b>
                 </section>
                 <input type="submit" value="GET IN TOUCH" style={{color:'rgb(255, 255, 255)',margin:'10px 0px',
                     fontWeight: 700,
@@ -83,8 +170,7 @@ class Aboutpage extends Component {
                     border: '0px',
                     borderRadius: '4px'}}/>
                 </section>
-                <div style={{width: '80%',position: 'relative',left: '10%',marginTop:10,borderBottom:'3px solid #e14800'}}></div>
-            </p>
+                </p>
             </div>
             <div className="realabout-six">
             <p>
@@ -101,9 +187,9 @@ class Aboutpage extends Component {
                     <input type="text" placeholder=" SUBJECT" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
                 </section>
             </p>
+            <form onSubmit={this.handleSubmitlogin}>
             <p>
                <label>
-               <form>
                <span className="ten-hi" style={{textAlign: 'right'}}>
                     <header style={{margin: '11px 20%'}}>
                         <h2>ABOUT US</h2><br/>
@@ -112,8 +198,11 @@ class Aboutpage extends Component {
                    </header>
                </span>
                <section style={{textAlign:'center'}}>
-               <section className="textarea-section" style={{textAlign:'center'}}>
-               <textarea placeholder=" write a message here.." style={{width:'60%',padding: '0px 2%',height: '115px',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
+               <Messagebox name={emailSentmessage} classidentifier={flashmessageIdentifier}/>
+               <section className="textarea-section" style={{textAlign:'center'}}  id="form">
+               <textarea placeholder=" write a message here.."  onChange={this.handleChangeemail}
+               value={email}
+               style={{width:'60%',padding: '0px 2%',height: '115px',outline:0,backgroundColor:'#ccc',border:0,borderRadius:'4px'}}/>
            </section>
                 <section style={{textAlign:'center'}}>
                 {
@@ -121,9 +210,9 @@ class Aboutpage extends Component {
                 }
                 </section>
                </section>
-               </form>
                </label>
             </p>
+            </form>
             </div>
             <div className="realabout-seven">
                     <p>

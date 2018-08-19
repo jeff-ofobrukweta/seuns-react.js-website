@@ -1,3 +1,6 @@
+*{
+    user-select: auto;
+}
 .display{
     display:none;
 }
@@ -9,7 +12,22 @@
     box-shadow: 0 6px 10px 0 #ccc;
     transform: scale(1.09);
 }
-
+.image{
+    margin: 0px 4%;
+    padding-right: 2%;
+}
+.main-flex-container{
+    display:flex;
+    justify-content: center;
+    flex-direction:row;
+}
+.flex-container-1 {
+    margin: 1% 5%;
+    flex-basis: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 .Navbar-workabout{
     display:grid;
@@ -79,7 +97,12 @@
    margin: 0px;
   }
   .workabout-three{
-    /* background: #666666 !important; */
+    background: url('../images/Call to Action_bg.png') !important;
+    text-align: center;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    width:100%;
+    min-height: 90%;
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: repeat(1,minmax(300px,auto));
@@ -105,7 +128,7 @@
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: repeat(1,minmax(300px,auto));
     align-items:start;
-    background: #666666;
+    background: #ccc;
     padding: 20px 81px !important;
     /* grid-gap: 10px; */
   }
@@ -116,9 +139,12 @@
    margin: 0px;
   }
   .workabout-two-parent{
-    background: #e1e1e1;
-    /* border: 1px solid #000; */
-    /* background: aqua; */
+    background: #eee !important;
+    text-align: center;
+    background-repeat: no-repeat !important;
+    background-size: cover;
+    width:100%;
+    min-height: 90%;
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: repeat(1,minmax(300px,auto));
@@ -149,7 +175,7 @@ transform: scale(0.800);
 
 .long-card-1:hover {
 transform: scale(0.820);
-border: 1px solid #000000;
+border: 1px solid #eee;
 box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 .5px 0px rgba(0,0,0,0.04);
 }
 
@@ -176,6 +202,20 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 .5px 0px rgba(0,0,0,0.04);
 }
 
 @media screen and (max-width: 800px) {
+    .image{
+        display: none;
+    }
+    .main-flex-container{
+        display:flex;
+        justify-content: center;
+        flex-direction:column;
+    }
+    .flex-container-1{
+        margin:1% 5%;
+        flex-basis:5%;
+        flex-wrap: wrap;
+    }
+    
 .one {
         /* background: red; */
         -ms-flex-preferred-size: 26%;

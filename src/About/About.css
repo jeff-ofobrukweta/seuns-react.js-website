@@ -99,9 +99,11 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 /* the nested-region for the first region ie-Nested is grid -1 nested */
 .Nested-about{
-    background-image: url("../images/Target_New.png") !important;
+    background: url("../images/Target_New.png") !important;
+    background-position: center center;
+    filter:grayscale(0.7);
     background-repeat: no-repeat !important;
-    /* background-size: contain !important; */
+    background-size: contain !important;
     min-height: 100%;
     z-index: 1 !important;
     display: grid;
@@ -111,11 +113,15 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     margin: 0% auto;
     grid-gap: 0px;
   }
+  /* working on the animation on */
+  .Nested-about:hover{
+    filter:grayscale(0);
+  }
   .Nested-about p{
    /* border: 1px solid #000; */
    text-align: center;
    padding: 0px;
-   margin-bottom: 13%;
+   margin-bottom: 33%;
    justify-content:center;
   }
   .two-about{
@@ -202,7 +208,7 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     grid-template-columns:1fr 1fr 1fr;
     grid-template-rows: repeat(1,minmax(300px,auto));
     align-items:start;
-    background: #adadad;
+    background: #ccc;
     padding: 20px 81px !important;
     /* grid-gap: 10px; */
   }
@@ -215,8 +221,51 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 
 
+
   /* media-query-for smaller-set for making the footer 1-column */
+  @media screen and (max-width: 500px) {
+    .Nested-about{
+      background: url("../images/Target_New0.svg");
+      /* background-position: center center; */
+      opacity: 0.6;
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+      min-height: 100%;
+      z-index: 1 !important;
+      display: grid;
+      grid-template-columns:1fr;
+      grid-template-rows: repeat(1,minmax(300px,auto));
+      align-items:center;
+      margin: 0% auto;
+      grid-gap: 0px;
+    }
+  }
   @media screen and (max-width: 800px) {
+    .Nested-about{
+      background: url("../images/Target_New0.svg");
+      background-position: center center;
+      opacity: 0.6;
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      min-height: 100%;
+      z-index: 1 !important;
+      display: grid;
+      grid-template-columns:1fr;
+      grid-template-rows: repeat(1,minmax(300px,auto));
+      align-items:center;
+      margin: 0% auto;
+      grid-gap: 0px;
+    }
+    /* working on the animation on */
+    .Nested-about:hover{
+      filter:grayscale(0.8);
+    }
+    .Nested-about p{
+     margin-bottom: 44%;
+     text-align: center;
+     padding: 0px;
+     justify-content:center;
+    }
     .three-about{
       display: grid;
       grid-template-columns:1fr;
@@ -259,6 +308,7 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
         grid-template-columns:1fr;
         grid-template-rows: repeat(1,minmax(65px,auto));
         align-items:start;
+        
         /* grid-gap: 1px; */
       }
       .eight-about p{
@@ -277,7 +327,8 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     position: relative;
     border-radius: 7px;
     border: 1.3px solid #fff;
-    width: 70%;
+    width: 80% !important;
+    cursor: pointer;
 }
 
 .card-1 {

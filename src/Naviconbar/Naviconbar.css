@@ -1,4 +1,5 @@
 /* Navigation */
+ul{transform: scale(1);}
 .navigation {
     background: transparent;
     padding-bottom: 1em;
@@ -40,18 +41,13 @@
 .display{
     opacity:0;
   }
+.fa{
+  font-size: 22 !important;
+  color: #666464;
+}
   
   /* For no mobile menu on desktop */
   @media screen and (max-width: 704px) {
-    .info{
-      display:inline-flex;
-    }
-    .text-write{
-      display:none !important;
-    }
-    .Appanimate{
-      display:none !important;
-    }
   }
   @media screen and (max-width: 1098px) {
     .logo-landing{

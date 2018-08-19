@@ -1,0 +1,10 @@
+/* flashmessage */
+.message-container-top{
+    background-color: #90d597;
+    text-align: center;
+    position: fixed;
+    width:100%;
+    height: 34px;
+}
+
+

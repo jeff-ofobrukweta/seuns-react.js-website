@@ -1,0 +1,9 @@
+.Errorpage{
+    background: url("../images/404_Error Page.jpg") !important;
+    background-position: center center;
+    background-repeat: no-repeat !important;
+    height: 53.5em;
+    background-size: contain !important;
+    min-height: 100%;
+    z-index: 1 !important;
+}

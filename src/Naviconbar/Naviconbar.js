@@ -6,12 +6,13 @@ class Naviconbar extends Component {
     constructor(props){
         super(props);
         this.state ={
-            isToggleOn:true
+            isToggleOn:false
         }
         this.handleClicktoogle = this.handleClicktoogle.bind(this);
     }
 
-    handleClicktoogle=()=>{
+    handleClicktoogle=(e)=>{
+        e.preventDefault();
         this.setState(prevState => ({
             isToggleOn: !prevState.isToggleOn
           }));
@@ -19,13 +20,13 @@ class Naviconbar extends Component {
     render() {
         const classes = [];
           const burgerSign = [];
-          if(this.state.isToggleOn==true){
-            classes.push('display');
-            burgerSign.push('fa fa-bars fa-1x');
+          if(this.state.isToggleOn==false){
+            classes.push('');
+            burgerSign.push('fa fa-close fa-1x');
           }else
           {
-             classes.push('');
-             burgerSign.push('fa fa-close fa-1x');
+             classes.push('display');
+             burgerSign.push('fa fa-bars fa-1x');
           }
     return (
             <div>
@@ -36,11 +37,11 @@ class Naviconbar extends Component {
                 </span>
                 <a href="#" className="logo"><input type="submit" value="Metronome" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700}}/></a>
                     <ul id="main-nav">
-                        <li className={classes}><a className="nav-item">About Us</a></li>
-                        <li className={classes}><a className="nav-item">Service</a></li>
-                        <li className={classes}><a className="nav-item">Project</a></li>
-                        <li><a className="nav-item">Contact Us</a></li>
-                        <li><a className="nav-item">
+                        <li className={classes}><a href="/about" className="nav-item">About Us</a></li>
+                        <li className={classes}><a href="/services" className="nav-item">Service</a></li>
+                        <li className={classes}><a href="/work" className="nav-item">Project</a></li>
+                        <li><a href="/" className="nav-item">Home</a></li>
+                        <li><a href="/" className="nav-item">
                         <i className={burgerSign} onClick={this.handleClicktoogle}></i>
                         </a></li>
                     </ul>

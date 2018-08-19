@@ -1,12 +1,41 @@
+
 @supports (display: grid) {
-  /* information display */
-  .info{
-    display:none;
+  .text-write:before{
+    content:'INFORMATION';
+    font-weight:1000;
+    animation: animate infinite 30000ms ease-in-out 1s;
+  }
+  @keyframes animate{
+   0%{
+       content:'INFORMATION';
+       font-weight:1000;
+       width: auto;
+    }
+    25%{
+       content:'DISTRIBUTION';
+       font-weight:1000;
+       width: auto;
+    }
+    50%{
+       content:'DATA';
+       font-weight:1000;
+       width: auto;
+    }
+    75%{
+       content:'CALCULATION';
+       font-weight:1000;
+       width: auto;
+    }
+    100%{
+      content:'DISTINCTION';
+      font-weight:1000;
+      width: auto;
+    }
   }
   .Navbar{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    grid-template-rows: repeat(17,minmax(130px,auto));
+    grid-template-rows: repeat(14,minmax(130px,auto));
     grid-gap:1px;
     max-width: 100%;
     margin:0px auto;
@@ -28,28 +57,6 @@
   grid-column:1 / 4;
   grid-row:8 /10;
 }
-
-/* .two{
-  grid-column:1 / 2;
-  grid-row:8 / 10;
-}
-.three{
-  grid-column:2 / 3;
-  grid-row:8 / 10;
-}
-.four{
-  grid-column:3 / 4;
-  grid-row:8 / 10;
-}
-
-.five{
-  grid-column:1 / 2;
-    grid-row:10 / 12;
-}
-.six{
-    grid-column:2 / 4;
-    grid-row:10 / 12;
-} */
 .seven{
   grid-column:1 / 4;
   grid-row:10 / 12;
@@ -73,17 +80,18 @@
 }
 /* the nested-region for the first region ie-Nested is grid -1 nested */
 .Nested{
-  /* background: url('../images/landing.jpg') !important; */
+  background: url('../images/landing1.svg') !important;
+  background-position:center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
   min-height: 90%;
   width:100%;
-  z-index: 1 !important;
+  transform: scale(1);
   display: grid;
-  grid-template-columns:1fr 2fr;
+  grid-template-columns:1fr;
   grid-template-rows: repeat(1,minmax(300px,auto));
   align-items:start;
-  grid-gap: 10px;
+  grid-gap: 0px;
 }
 .Nested p{
  /* border: 1px solid #000; */
@@ -137,26 +145,27 @@
 .seven{
   display: grid;
   grid-template-columns:1fr 1fr;
-  grid-template-rows: repeat(1,minmax(600px,auto));
-  align-items:center;
+  grid-template-rows: repeat(1,minmax(auto,auto));
+  align-items:start;
+  padding: 5% 3% !important;
   /* grid-gap: 10px; */
 }
 .seven p{
  /* border: 1px solid #000; */
  padding: 20px;
- margin: 0px;
+ margin: auto 4%;
 }
 .eight{
   display: grid;
   grid-template-columns:1fr 1fr;
   /* grid-template-rows: repeat(1,minmax(600px,auto)); */
-  align-items:center;
+  align-items:start;
   /* grid-gap: 10px; */
 }
 .eight p{
  /* border: 1px solid #000; */
  padding: 20px;
- margin: 0px;
+ margin: auto 4%;
 }
 .nine{
   display: grid;
@@ -200,22 +209,18 @@
 }
 
   /* icon in the page */
-  /* this media-query is due to the animation slidding too far */
-  @media screen and (min-width: 1546px) and (max-width: 2700px) {
-     .info{
-       display:inline-block !important;
-    }
-    .text-write{
-      display: none;
-    }
-  }
   @media screen and (max-width: 800px) {
+    /* to shift the textup the view */
+    .Navbar div {
+      padding: 0px;
+      position: relative;
+      bottom: 40px;
+  }
+  /* ends here */
     .info{
       display: inline-block;
     }
-    .text-write{
-      display: none;
-    }
+    
     /* Grids start here */
     .seven{
       display: grid;
@@ -271,6 +276,12 @@
   }
 
   @media screen and (max-width: 800px) {
+    .horizontal{
+      margin-top:45px!important;
+    }
+    .horizontal-second-index{
+      margin-top: -18px;
+    }
     .parent-container-two-six{
       width: 100%;
       margin:0 auto;
@@ -282,7 +293,7 @@
     .parent-container-two-six .two,.three,.four,.five,.six{
       height:434.88px;
       flex-basis:100% !important;
-      border: 1px solid #666666;
+      /* border: 1px solid #666666; */
     }
     .eleven{
       display: grid;
@@ -293,8 +304,7 @@
       /* grid-gap: 1px; */
     }
     .eleven p{
-      background: #ccc;
-     /* border: 1px solid #000; */
+     background: #ccc;
      padding: 10px;
      margin: 0px;
     }
@@ -302,7 +312,7 @@
       display:grid;
       grid-template-columns:repeat(3,1fr);
       grid-template-rows: repeat(15,minmax(130px,auto));
-      grid-gap:1px;
+      grid-gap:0px;
       max-width: 100%;
       margin:0px auto;
   
@@ -311,19 +321,16 @@
       /* background: rgb(235, 152, 27); */
       padding: 0px;
   }
-  .Navbar div:nth-child(even){
-      /* background: #595050; */
-  }
   .Nested{
-    /* background: url('../images/icecream.jpg') !important; */
+    background: url('') !important;
+    display: none;
     background-repeat: no-repeat !important;
     background-size: cover;
-    z-index: 1 !important;
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: repeat(1,minmax(300px,auto));
     align-items:center;
-    grid-gap: 1px;
+    grid-gap: 0px;
   }
   .Nested p{
    /* border: 1px solid #000; */
@@ -338,27 +345,6 @@
     grid-column:1 / 4;
     grid-row:8 /10;
   }
-  /* .two{
-    grid-column:1 / 4;
-    grid-row:6 / 8;
-  }
-  .three{
-    grid-column:1 / 4;
-    grid-row:8 / 10;
-  }
-  .four{
-    grid-column:1 / 4;
-    grid-row:10 / 12;
-  }
-  
-  .five{
-    grid-column:1 / 4;
-      grid-row:12 / 14;
-  }
-  .six{
-      grid-column:1 / 4;
-      grid-row:14 / 16;
-  } */
   .seven{
     grid-column:1 / 4;
     grid-row:10 / 12;
@@ -379,11 +365,8 @@
     grid-column:1 / 4;
     grid-row:18 / 20;
   }
-    /* Grid-area */
   }
 }
-
-
 
 
 
@@ -430,34 +413,6 @@ blockquote {
 	font-weight: 400;
 	line-height: 30px;
 }
-  
-  /* write-selft */
-  .text-write{
-    position: relative;
-    /* top:50%;
-    left:0%; */
-    width:50%;
-    margin:0 10px;
-    border-right:1px solid hsl(0, 9%, 85%);
-    font-size:100%;
-    text-align: center;
-    overflow: hidden;
-    transform:translateY(-71%);
-  }
-  .text-write{
-    -webkit-animation: typewriter 3s steps(400) 1s 1 normal both, blinkTextCursor 300ms steps(200) infinite normal;
-    animation: typewriter 4s steps(500) 1s 1 normal both,
-               blinkTextCursor 500ms steps(400) infinite normal;
-  }
-  @keyframes typewriter{
-    from{width:0%;opacity:0}
-    to{width:95%;border-right:1px solid transparent;}
-  }
-  @keyframes blinkTextCursor{
-    from {border-right-color:rgb(245, 245, 245) !important;}
-    to {border-right-color: transparent !important;}
-  }
-  /* buttons-transitions */
   input[type="submit"]{
     z-index: 1;
    transition: all 0.4s ease-in-out;
