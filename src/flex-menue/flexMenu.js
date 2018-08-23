@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Icon from './icon/icon';
 import './flexMenu.css';
 
 class flexMenu extends Component {
@@ -56,7 +57,7 @@ handleClicktoogle=(e)=>{
                     <li id="li"><a id="a" href="/services"><b>Services</b></a></li>
                     <li id="li"><a id="a" href="/about"><b>Team</b></a></li>
                     <li id="li"><a id="a" href="/work"><b>Portfolio</b></a></li>
-                    <li id="li"><span id="a" href="#" onClick={this.handleClicktooglenavtransition} ><i className={biggerBurger}></i></span></li>
+                    <li id="li"><span id="a" href="#" onClick={this.handleClicktooglenavtransition} ><i>{Icon}</i></span></li>
                   </ul>
                 </nav>
                 <div className="menu-toggle" onClick={this.handleClicktoogle}><i className={burgerSign}></i></div> 

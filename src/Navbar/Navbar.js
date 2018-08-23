@@ -77,7 +77,7 @@ class Navbar extends Component {
                 <div className="one">
                     <div className="Nested">
                     <Naviconbar/>
-                    <p className="first" style={{position: 'relative',margin: '-13.76% 6%'}}>
+                    <p className="first" style={{position: 'relative',margin: '-13.86% 6%'}}>
                         <div className="nested-A"> 
                             <h2 style={{fontSize: '30px',marginBottom:'34px',transform: 'scale(1.04)'}}>
                             <b style={{fontWeight:1000}}><span className="text-write-parent"><b>WE  PROVIDE </b><span className="info"><b style={{color:'#e14800',fontWeight:1000,fontWeight:'bold'}} className="text-write"></b></span></span></b>

@@ -75,7 +75,7 @@ body{
         width: 100%;
         height: calc(100vh - 50px);
         padding: 0% 25px !important;
-        background: #020202;
+        background: #a1a1a1;
         z-index:1;
         top:50px;
         left:-100%;
