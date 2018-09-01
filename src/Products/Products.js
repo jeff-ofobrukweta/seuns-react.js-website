@@ -10,6 +10,7 @@ import Information from '../images/Group 7.png';
 import Knowledge from '../images/Group 8.png';
 import Wisdom from '../images/Group 9.png';
 import Screw from '../images/cropgear.png';
+import Arrow from '../images/Arrowdown-01.png';
 import axios from 'axios';
 import './Products.css';
 
@@ -197,12 +198,10 @@ class Product extends Component {
 
 
           if(this.state.isToggleOnlarge==true){
-            displayMiddlefloatbuttonsign.push('fa fa-caret-down fa-1x');
             displaylargeCard.push('displaylargeCard');
           }
           else{
               displaylargeCard.push('');
-              displayMiddlefloatbuttonsign.push('fa fa-caret-up fa-1x');
           }
     return (
       <div className="Product">
@@ -216,7 +215,7 @@ class Product extends Component {
                     <h2 style={{fontSize: '32px',fontWeight:'bold',lineHeight:'calc(100%)'}}>TAILORED TO SPECIFIC NEED</h2>
                 </div>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'50%',margin:'20px 25%'}}></div>
-                <section style={{marginBottom:'10%'}}>
+                <section style={{marginBottom:'10%',fontSize: '19px'}}>
                 Providing usable solutions remains the<br/>
                 pivot that supports our research and execution process.
                 </section>
@@ -422,7 +421,7 @@ class Product extends Component {
                 </div>
         </div>
             <section style={{textAlign: '-webkit-center'}}>
-            <div className={displayMiddlefloatbuttonsign} id="product-orange-button" onClick={this.handleClicktooglelargecard} style={{
+            <div id="product-orange-button" onClick={this.handleClicktooglelargecard} style={{
                             width: '70px',
                             height: '70px',
                             backgroundColor: '#e14800',
@@ -430,14 +429,14 @@ class Product extends Component {
                             textAlign:'center',
                             position:'relative',
                             top: '-31px',
-                            margin: '0% auto',
+                            margin: '0% 45%',
                             fontSize: '36px',
                             lineHeight: '70px',
                             color: 'white',
                             textAlign: 'center',
                             zIndex: '999999999999999',
                             transition: 'all 0.3s ease-in-out'
-                        }}></div>
+                        }}><img src={Arrow} alt="arrow-icon"/></div>
             </section>
       </div>
         <div className="workabout-three">

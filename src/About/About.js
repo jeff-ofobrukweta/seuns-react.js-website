@@ -89,7 +89,7 @@ class About extends Component {
                 </div>
                 <div className="nested-A" id="orange" style={{width: '45%',position: 'relative',left: '27%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
                 <div className="nested-A">
-                    <section className="section-mobile" style={{fontWeight:500,fontSize:17,fontWeight: 800,wordSpacing:0}}>
+                    <section className="section-mobile" style={{fontSize:17,fontWeight: 500,wordSpacing:0}}>
                     We enable seamless,integrated strategies for the use of data and information to address<br/> 
                     human settlements and environmental challenges in developing countries,by generating<br/>
                     and carrying out knowledge-intensive activities that provide largely customized<br/>
