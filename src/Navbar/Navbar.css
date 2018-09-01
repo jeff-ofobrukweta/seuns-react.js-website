@@ -99,6 +99,9 @@
  margin: 0px;
 }
 .parent-container-two-six{
+  position: relative;
+}
+.parent-container-first-three-cover-section-A{
   width: 100%;
   margin:0 auto;
   display:flex;
@@ -106,28 +109,48 @@
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.parent-container-two-six .two,.three,.four,.five{
+.parent-container-first-three-cover-section-A .two,.three,.four{
   height:400px;
   flex-basis:33.3333%;
-  /* border: 1px solid #666666; */
 }
-.parent-container-two-six .six{
+.circle-button-insection-A{
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff !important;
+    position: absolute;
+    border-radius: 50%;
+    box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    top: 6%;
+    left: 64%;
+    flex-basis: auto;
+}
+.circle-button-insection-B{
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff !important;
+  position: absolute;
+  top: 67%;
+  left: 31%;
+  border-radius: 50%;
+  box-shadow:0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  flex-basis: auto;
+}
+.parent-container-first-three-cover-section-B{
+  width: 100%;
+  margin:0 auto;
+  display:flex;
+  background: #fff;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.parent-container-first-three-cover-section-B .six{
   height:434.88px;
   flex-basis:66.666666%;
-  /* border: 1px solid #666666; */
 }
-
-/* .two{
-  display: grid;
-  grid-template-columns:1fr;
-  grid-template-rows: repeat(1,minmax(300px,auto));
-  align-items:start;
-  grid-gap: 10px;
+.parent-container-first-three-cover-section-B .five{
+  height:400px;
+  flex-basis:33.3333%;
 }
-.two p{
- padding: 1px;
- margin: 0px;
-} */
 .six{
   /* border: 1px solid #000; */
   display: grid;
@@ -168,6 +191,11 @@
  margin: auto 4%;
 }
 .nine{
+  background: url('../images/Call to Action_bg.png') !important;
+  background-position:bottom bottom;
+  text-align: center;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
   display: grid;
   grid-template-columns:1fr;
   grid-template-rows: repeat(1,minmax(300px,auto));
@@ -210,6 +238,12 @@
 
   /* icon in the page */
   @media screen and (max-width: 800px) {
+    .circle-button-insection-A{
+      display: none;
+    }
+    .circle-button-insection-B{
+      display: none;
+    }
     /* to shift the textup the view */
     .Navbar div {
       padding: 0px;
@@ -377,12 +411,12 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .fa-anchor,.fa-coffee {font-size:200px}
 ul,ol{list-style: none}
 h2 {
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 24px;
 	font-style: normal;
 	font-variant: normal;
@@ -390,7 +424,7 @@ h2 {
 	line-height: 26.4px;
 }
 h3 {
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -398,7 +432,7 @@ h3 {
 	line-height: 15.4px;
 }
 p {
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 14px;
 	font-style: normal;
 	font-variant: normal;
@@ -406,7 +440,7 @@ p {
 	line-height: 20px;
 }
 blockquote {
-	font-family: "Century Gothic", CenturyGothic, AppleGothic, sans-serif;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 	font-size: 21px;
 	font-style: normal;
 	font-variant: normal;
@@ -422,4 +456,5 @@ blockquote {
     box-shadow: 0 6px 14px 0 rgb(174, 172, 172);
     transform: scale(1.05);
  }
+
 

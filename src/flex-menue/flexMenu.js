@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Icon from './icon/icon';
+import Smallnavbar from '../Naviconbar/Naviconbar';
 import './flexMenu.css';
 
 class flexMenu extends Component {
@@ -10,6 +10,7 @@ class flexMenu extends Component {
         active:true
     }
     this.handleClicktoogle = this.handleClicktoogle.bind(this);
+    this.handleMenuToogle = this.handleMenuToogle.bind(this);
     this.handleClicktooglenavtransition = this.handleClicktooglenavtransition.bind(this);
 }
 handleClicktooglenavtransition=(e)=>{
@@ -18,7 +19,14 @@ handleClicktooglenavtransition=(e)=>{
       active: !prevState.active
     }));
 }
-
+handleMenuToogle=()=>{
+  const hamburgerElement = document.getElementById("ul");
+  const menuToogle = document.getElementById("menu-toogle-1-id");
+  const hamburger = document.getElementById("2")
+  menuToogle.classList.toggle("toggle-active");
+  hamburger.classList.toggle("hambuger-active");
+  hamburgerElement.classList.toggle("nav-active");
+}
 handleClicktoogle=(e)=>{
     e.preventDefault();
     this.setState(prevState => ({
@@ -26,41 +34,21 @@ handleClicktoogle=(e)=>{
       }));
 }
   render() {
-    const Active =[];
-    const burgerSign = [];
-    const Show =[];
-    const biggerBurger=[];
-          if(this.state.isToggleOn==false){
-            Active.push('');
-            burgerSign.push('fa fa-bars fa-1x');
-          }else
-          {
-            Active.push('active');
-             burgerSign.push('fa fa-close fa-1x');
-          }
-          if(this.state.active==false){
-            Show.push('');
-            biggerBurger.push('fa fa-bars fa-1x');
-          }else
-          {
-            Show.push('active');
-            biggerBurger.push('fa fa-close fa-1x');
-          }
     return (
         <div>
             <header className="header-nav" id="header">
-                <div className="logo">Logo</div>
-                <nav className={Active} id="nav">
-                  <ul id="ul">
-                    <li id="li"><a id="a" href="/" className="active"><b>Home</b></a></li>
-                    <li id="li"><a id="a" href="/about"><b>About</b></a></li>
-                    <li id="li"><a id="a" href="/services"><b>Services</b></a></li>
-                    <li id="li"><a id="a" href="/about"><b>Team</b></a></li>
-                    <li id="li"><a id="a" href="/work"><b>Portfolio</b></a></li>
-                    <li id="li"><span id="a" href="#" onClick={this.handleClicktooglenavtransition} ><i>{Icon}</i></span></li>
+                <div className="logo"><input type="submit" value="Metronome" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700}}/></div>
+                <nav id="nav" className="nav">
+                  <ul id="ul" className="idle-ul">
+                    <li id="li"><a id="a" href="/" className="active">ABOUT US</a></li>
+                    <li id="li"><a id="a" href="/work">SERVICES</a></li>
+                    <li id="li"><a id="a" href="/services">PROJECTS</a></li>
+                    <li id="li"><a id="a" href="/about">CONTACT US</a></li>
                   </ul>
-                </nav>
-                <div className="menu-toggle" onClick={this.handleClicktoogle}><i className={burgerSign}></i></div> 
+                  <span className="menu-toogle-1" data-reactid='1' id="menu-toogle-1-id" onClick={this.handleMenuToogle}>
+                    <i className="hamburger-bars"  id="2"></i>
+                  </span>
+                </nav>    
             </header>
         </div>
     );

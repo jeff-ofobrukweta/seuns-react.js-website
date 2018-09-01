@@ -9,6 +9,7 @@ import Data from '../images/Group 6.png';
 import Information from '../images/Group 7.png';
 import Knowledge from '../images/Group 8.png';
 import Wisdom from '../images/Group 9.png';
+import Screw from '../images/cropgear.png';
 import axios from 'axios';
 import './Products.css';
 
@@ -205,20 +206,23 @@ class Product extends Component {
           }
     return (
       <div className="Product">
+            <Naviconbar/>
             <div className="Navbar-workabout">
                 <Loader/>
             <div className="workabout-one-parent">
-            <Naviconbar/>
             <div className="workabout-one">
                 <p>
                 <div className="nested-A"> 
                     <h2 style={{fontSize: '32px',fontWeight:'bold',lineHeight:'calc(100%)'}}>TAILORED TO SPECIFIC NEED</h2>
                 </div>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'50%',margin:'20px 25%'}}></div>
-                <section>
+                <section style={{marginBottom:'10%'}}>
                 Providing usable solutions remains the pivot that supports<br/>
                our research and execution process.
                 </section>
+                <div className="container-xcrew">
+                    <img src={Screw} alt="xrew" className="xrew"/>
+                </div>
                 </p>
             </div>
             </div>
@@ -431,7 +435,7 @@ class Product extends Component {
                             lineHeight: '70px',
                             color: 'white',
                             textAlign: 'center',
-                            zIndex: '1',
+                            zIndex: '999999999999999',
                             transition: 'all 0.3s ease-in-out'
                         }}></div>
             </section>
@@ -440,20 +444,20 @@ class Product extends Component {
         <p>
         <section style={{textAlign:'center'}}>
                     <section className="main-flex-container">
-                        <div className="flex-container-1">
-                            <img src={Data} href="Data" className="image"/>
+                        <div className="flex-container-1-first-element">
+                            <img src={Data} href="Data" className="image-icon-A"/>
                             <div className="flex-item"><b>Data</b></div>
                         </div>
                         <div className="flex-container-1">
-                            <img src={Information} href="Information" className="image"/>
+                            <img src={Information} href="Information" className="image-icon-A"/>
                             <div className="flex-item"><b>Information</b></div>
                         </div>
                         <div className="flex-container-1">
-                            <img src={Knowledge} href="Knowledge" className="image"/>
+                            <img src={Knowledge} href="Knowledge" className="image-icon-A"/>
                             <div className="flex-item"><b>Knowledge</b></div>
                         </div>
-                        <div className="flex-container-1">
-                            <img src={Wisdom} href="Wisdom" className="image"/>
+                        <div className="flex-container-1-last-element">
+                            <img src={Wisdom} href="Wisdom" className="image-icon-A"/>
                             <div className="flex-item"><b>Wisdom</b></div>
                         </div>
                     </section>
@@ -496,7 +500,7 @@ class Product extends Component {
         <form onSubmit={this.handleSubmitlogin}>
         <p>
         <label>
-        <span className="ten-hi" style={{textAlign: 'right'}}>
+        <span className="ten-hi" className="mobile-header-right">
                 <header style={{margin: '11px 20%'}}>
                     <h2>ABOUT US</h2><br/>
                     About Metronome<br/>

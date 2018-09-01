@@ -7,6 +7,8 @@ import Information from '../images/Group 7.png';
 import Knowledge from '../images/Group 8.png';
 import Wisdom from '../images/Group 9.png';
 import Messagebox from '../Grid/Grid';
+import Tree from '../images/Asset.png';
+import Circle4 from '../images/Call to Action_bg.png';
 import axios from 'axios';
 import  './Aboutpage.css';
 
@@ -85,7 +87,7 @@ class Aboutpage extends Component {
                 <div>
                 </div>
                 <div className="push-image">
-
+                    <img src={Tree} alt="section-image-tree" style={{width:'100%'}}/>
                 </div>
                 </p>
             </div>
@@ -94,7 +96,7 @@ class Aboutpage extends Component {
             <div className="realabout-two">
                 <p>
                 <h2 style={{fontSize: '28px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
-                <div className="nested-A" id="orange" style={{borderBottom:'4px solid #f8cbad',width:'33%',margin:'20px 67%'}}></div>
+                <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'33%',margin:'20px 67%'}}></div>
                 <section>
                 Application of developed data infrastructure,information<br/>
                 management and communication to improve Human settlement and enviroment.
@@ -107,7 +109,7 @@ class Aboutpage extends Component {
             <div className="realabout-three">
                 <p>
                 <h2 style={{fontSize: '28px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
-                <div className="nested-A" id="orange" style={{borderBottom:'4px solid #f8cbad',width:'33%',margin:'20px 0px'}}></div>
+                <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'33%',margin:'20px 0px'}}></div>
                 <section>
                 Application of developed data infrastructure,information<br/>
                 management and communication to improve Human settlement and enviroment.
@@ -120,7 +122,7 @@ class Aboutpage extends Component {
             <div className="realabout-four">
                 <p>
                 <h2 style={{fontSize: '28px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
-                <div className="nested-A" id="orange" style={{borderBottom:'4px solid #f8cbad',width:'33%',margin:'20px 67%'}}></div>
+                <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'33%',margin:'20px 67%'}}></div>
                 <section>
                 Application of developed data infrastructure,information<br/>
                 management and communication to improve Human settlement and enviroment.
@@ -134,20 +136,20 @@ class Aboutpage extends Component {
                 <p>
                 <section style={{textAlign:'center'}}>
                 <section className="main-flex-container">
-                        <div className="flex-container-1">
-                            <img src={Data} href="Data" className="image"/>
+                        <div className="flex-container-1-first-element">
+                            <img src={Data} href="Data" className="image-icon-A"/>
                             <div className="flex-item"><b id="mobile">Data</b></div>
                         </div>
                         <div className="flex-container-1">
-                            <img src={Information} href="Information" className="image"/>
+                            <img src={Information} href="Information" className="image-icon-A"/>
                             <div className="flex-item"><b>Information</b></div>
                         </div>
                         <div className="flex-container-1">
-                            <img src={Knowledge} href="Knowledge" className="image"/>
+                            <img src={Knowledge} href="Knowledge" className="image-icon-A"/>
                             <div className="flex-item"><b>Knowledge</b></div>
                         </div>
-                        <div className="flex-container-1">
-                            <img src={Wisdom} href="Wisdom" className="image"/>
+                        <div className="flex-container-1-last-element">
+                            <img src={Wisdom} href="Wisdom" className="image-icon-A"/>
                             <div className="flex-item"><b>Wisdom</b></div>
                         </div>
                 </section>
@@ -190,7 +192,7 @@ class Aboutpage extends Component {
             <form onSubmit={this.handleSubmitlogin}>
             <p>
                <label>
-               <span className="ten-hi" style={{textAlign: 'right'}}>
+               <span className="ten-hi" className="mobile-header-right">
                     <header style={{margin: '11px 20%'}}>
                         <h2>ABOUT US</h2><br/>
                         About Metronome<br/>

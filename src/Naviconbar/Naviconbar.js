@@ -3,50 +3,31 @@ import {Route,Switch,Link} from 'react-router-dom';
 import './Naviconbar.css';
 
 class Naviconbar extends Component {
-    constructor(props){
-        super(props);
-        this.state ={
-            isToggleOn:false
-        }
-        this.handleClicktoogle = this.handleClicktoogle.bind(this);
-    }
-
-    handleClicktoogle=(e)=>{
-        e.preventDefault();
-        this.setState(prevState => ({
-            isToggleOn: !prevState.isToggleOn
-          }));
-    }
     render() {
-        const classes = [];
-          const burgerSign = [];
-          if(this.state.isToggleOn==false){
-            classes.push('');
-            burgerSign.push('fa fa-close fa-1x');
-          }else
-          {
-             classes.push('display');
-             burgerSign.push('fa fa-bars fa-1x');
-          }
     return (
             <div>
-                <header>
-                <nav className="navigation">
-                <span className="navbar-toggle">
-                <i className="fa fa-bars fa-1x" style={{margin:'20px 10px'}}></i>
-                </span>
-                <a href="#" className="logo"><input type="submit" value="Metronome" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700}}/></a>
-                    <ul id="main-nav">
-                        <li className={classes}><a href="/about" className="nav-item">About Us</a></li>
-                        <li className={classes}><a href="/services" className="nav-item">Service</a></li>
-                        <li className={classes}><a href="/work" className="nav-item">Project</a></li>
-                        <li><a href="/" className="nav-item">Home</a></li>
-                        <li><a href="/" className="nav-item">
-                        <i className={burgerSign} onClick={this.handleClicktoogle}></i>
-                        </a></li>
-                    </ul>
-                </nav>
-                </header>
+                <div class="nav-div">
+                <div class="nav-header">
+                <div class="nav-title">
+                    JoGeek
+                </div>
+                </div>
+                <div class="nav-btn">
+                <label for="nav-check">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                </div>
+                <input type="checkbox" id="nav-check"/>
+                <div class="nav-links">
+                <a href="//github.io/jo_geek" target="_blank" className="a">Github</a>
+                <a href="http://stackoverflow.com/users/4084003/" target="_blank" className="a">Stackoverflow</a>
+                <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank" className="a">LinkedIn</a>
+                <a href="https://codepen.io/jo_Geek/" target="_blank" className="a">Codepen</a>
+                <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank" className="a">JsFiddle</a>
+                </div>
+            </div>
             </div>
            );
   }

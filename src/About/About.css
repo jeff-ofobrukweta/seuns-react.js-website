@@ -17,7 +17,10 @@
     grid-gap:0px;
     max-width: 100%;
     margin:0px auto;
-
+}
+.big-module-before-nest{
+  position: relative;
+  bottom: 80%;
 }
 .About-parent-container div{
     /* border: 1px solid rgb(34, 31, 31); */
@@ -118,11 +121,12 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     filter:grayscale(0);
   }
   .Nested-about p{
-   /* border: 1px solid #000; */
    text-align: center;
    padding: 0px;
-   margin-bottom: 33%;
+   margin: 0% 24%;
    justify-content:center;
+   position: absolute;
+   top: 28%;
   }
   .two-about{
     background: #eee;
@@ -177,7 +181,11 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
    margin: 0px;
   }
 .six-about{
-    /* background: #666666 !important; */
+    background: url('../images/Call to Action_bg.png') !important;
+    background-position:bottom bottom;
+    text-align: center;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     display: grid;
     grid-template-columns:1fr;
     grid-template-rows: repeat(1,minmax(300px,auto));
@@ -222,10 +230,12 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 
 
 
+
+
   /* media-query-for smaller-set for making the footer 1-column */
   @media screen and (max-width: 500px) {
     .Nested-about{
-      background: url("../images/Target_New0.svg");
+      /* background: url("../images/Target_New0.svg"); */
       /* background-position: center center; */
       opacity: 0.6;
       background-repeat: no-repeat !important;
@@ -242,7 +252,7 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   }
   @media screen and (max-width: 800px) {
     .Nested-about{
-      background: url("../images/Target_New0.svg");
+      /* background: url("../images/Target_New0.svg"); */
       background-position: center center;
       opacity: 0.6;
       background-repeat: no-repeat !important;
@@ -261,7 +271,6 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
       filter:grayscale(0.8);
     }
     .Nested-about p{
-     margin-bottom: 44%;
      text-align: center;
      padding: 0px;
      justify-content:center;

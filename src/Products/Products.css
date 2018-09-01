@@ -8,13 +8,16 @@
     display:none;
 }
 
+.mobile-header-right{
+    text-align: right;
+}
+
 #product-orange-button:hover{
     box-shadow: 0 6px 10px 0 #ccc;
     transform: scale(1.09);
 }
-.image{
+.image-icon-A{
     margin: 0px 4%;
-    padding-right: 2%;
 }
 .main-flex-container{
     display:flex;
@@ -22,17 +25,66 @@
     flex-direction:row;
 }
 .flex-container-1 {
-    margin: 1% 5%;
+    margin: 1% 3%;
     flex-basis: 5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
+.flex-container-1-last-element,.flex-container-1-first-element{
+    margin: 1% 3%;
+    flex-basis: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/* the dotted slash in the icon image */
+.flex-container-1-first-element::after{
+    content:"";
+    height:2px;
+    width:110px;
+    background: red;
+    position: relative;
+    left:1%;
+    top:-60px;
+    margin-left: 80%;
+}
+.flex-container-1-last-element::before{
+    content:"";
+    height:2px;
+    width:110px;
+    background: red;
+    position: relative;
+    left:1%;
+    bottom:-50px;
+    margin-right: 80%;
+}
+.flex-container-1::before{
+    content:"";
+    height:2px;
+    width:110px;
+    background: red;
+    position: relative;
+    left:1%;
+    bottom:-50px;
+    margin-right: 80%;
+  }
+  .flex-container-1::after{
+    content:"";
+    height:2px;
+    width:110px;
+    background: red;
+    position: relative;
+    left:1%;
+    top:-60px;
+    margin-left: 80%;
+  }
+  
 
 .Navbar-workabout{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    grid-template-rows: repeat(5,minmax(200px,auto));
+    grid-template-rows: repeat(3,minmax(200px,auto));
     grid-gap:1px;
     max-width: 100%;
     margin:0px auto;
@@ -48,24 +100,24 @@
 }
 .workabout-one-parent{
     grid-column:1 / 4;
-    grid-row:1 / 10;
+    grid-row:1 / 9;
 }
 .workabout-two{
   grid-column:1 / 4;
-  grid-row:10 / 12;
+  grid-row:9 / 11;
 }
 .workabout-three{
     grid-column:1 / 4;
-    grid-row:12 / 13;
+    grid-row:11 / 12;
  }
 .workabout-four{
     grid-column:1 / 4;
-    grid-row:13 / 15;
+    grid-row:12 / 14;
 }
 .workabout-four{
     /* border: 1px solid #000; */
     grid-column:1 / 4;
-      grid-row:15 / 16;
+      grid-row:14 / 15;
   }
 
 
@@ -73,7 +125,7 @@
 
 /* nested grids */
 .workabout-one{
-    background: url('../images/Asset 3.png') !important;
+    /* background: url('../images/newport.png') !important; */
     text-align: center;
     background-repeat: no-repeat !important;
     background-size: cover;
@@ -98,9 +150,10 @@
   }
   .workabout-three{
     background: url('../images/Call to Action_bg.png') !important;
+    background-position:bottom bottom;
     text-align: center;
     background-repeat: no-repeat !important;
-    background-size: cover;
+    background-size: cover !important;
     width:100%;
     min-height: 90%;
     display: grid;
@@ -150,6 +203,8 @@
     grid-template-rows: repeat(1,minmax(300px,auto));
     align-items:center;
     grid-gap: 0px;
+    position: relative;
+    z-index: 9999;
   }
   .workabout-two-parent div{
    /* border: 1px solid #000; */
@@ -178,8 +233,15 @@ transform: scale(0.820);
 border: 1px solid #eee;
 box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 .5px 0px rgba(0,0,0,0.04);
 }
-
-
+.container-xcrew{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+}
+.xrew{
+    width:inherit;
+}
 
 
 /* using flex-box */
@@ -202,17 +264,28 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 .5px 0px rgba(0,0,0,0.04);
 }
 
 @media screen and (max-width: 800px) {
-    .image{
+    .image-icon-A{
         display: none;
     }
+    /* shift-header-in-form to the left */
+    .mobile-header-right{
+        text-align: left;
+    }
+    /* removes the dotted-lines if the view-port gets to 800px view-port */
+    .flex-container-1-last-element::before{display:none;}
+    .flex-container-1-last-element::after{display:none;}
+    .flex-container-1-first-element::before{display:none;}
+    .flex-container-1-first-element::after{display:none;}
+    .flex-container-1::before{display:none;}
+    .flex-container-1::after{display:none;}
     .main-flex-container{
         display:flex;
         justify-content: center;
         flex-direction:column;
     }
     .flex-container-1{
-        margin:1% 5%;
-        flex-basis:5%;
+        margin:1% 3%;
+        flex-basis:4%;
         flex-wrap: wrap;
     }
     

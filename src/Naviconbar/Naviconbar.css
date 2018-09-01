@@ -1,84 +1,97 @@
-/* Navigation */
-ul{transform: scale(1);}
-.navigation {
-    background: transparent;
-    padding-bottom: 1em;
-    box-shadow: var(--shadow);
-  }
-  .navigation a:hover {
-    color: var(--link-color);
-    transition: 0.5s;
-  }
-  #main-nav {
-    font-family: var(--header-font);
-    list-style-type: none;
-    display: none;
-    flex-direction: column;
-  }
-  .nav-item,
-  .logo {
-    text-decoration: none;
-    color: var(--main-font-color);
-  }
-  #main-nav li {
-    text-align: center;
-    margin: 1em auto;
-  }
-  .logo {
-    display: inline-block;
-    font-size: 1.3em;
-    margin-top: 0.8em;
-    margin-left: 1.2em;
-  }
-  .navbar-toggle {
-    position: absolute;
-    top: 0.2em;
-    right: 1.1em;
-    cursor: pointer;
-    font-size: 1.1em;
-  }
-/* display-nav-bar */
-.display{
-    opacity:0;
-  }
-.fa{
-  font-size: 22 !important;
-  color: #666464;
+* {
+  box-sizing: border-box;
 }
-  
-  /* For no mobile menu on desktop */
-  @media screen and (max-width: 704px) {
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+}
+
+.nav-div {
+  height: 50px;
+  width: 100%;
+  background-color: #4d4d4d;
+  position: relative;
+}
+
+.nav-div > .nav-header {
+  display: inline;
+}
+
+.nav-div > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav-div > .nav-btn {
+  display: none;
+}
+
+.nav-div > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav-div > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav-div > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav-div > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav-div > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
-  @media screen and (max-width: 1098px) {
-    .logo-landing{
-      display: none;
-    }
+  .nav-div > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
   }
-  @media screen and (min-width: 1024px) {
-    .navigation {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 70px;
-      align-items: center;
-    }
-    #main-nav {
-      display: flex !important;
-      margin-right: 30px;
-      margin-bottom: 0;
-      flex-direction: row;
-      justify-content: flex-end;
-    }
-    #main-nav li {
-      margin: 0;
-    }
-    .nav-item {
-      margin-left: 40px;
-    }
-    .logo {
-      margin: 0 3% !important;
-    }
-    .navbar-toggle {
-      display: none;
-    }
+  .nav-div > .nav-btn > label:hover {
+    background-color: rgba(0, 0, 0, 0.3);
   }
+  .nav-div > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav-div > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav-div > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav-div > #nav-check:not(:checked) + .nav-links {
+    height: 0px;
+  }
+  .nav-div > #nav-check:checked + .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}

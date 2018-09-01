@@ -9,6 +9,7 @@ import About from './Real-Aboutpage/Aboutpage';
 import Product from './Products/Products';
 import Naviconbar from './flex-menue/flexMenu';
 import Test from './flex-menue/flexMenu';
+import Smallnavbar from './Naviconbar/Naviconbar';
 import './App.css';
 import Errorpage from './Error/Error';
 

@@ -82,11 +82,12 @@ class About extends Component {
         <div className="one-about">
             <div className="Nested-about">
             <Navibaricon/>
-            <p className="first-about">
+        <p className="first-about">
+            <div className="big-module-before-nest">
                 <div className="nested-A"> 
                     <h2 style={{fontSize: '30px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
                 </div>
-                <div className="nested-A" id="orange" style={{width: '40%',position: 'relative',left: '30%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
+                <div className="nested-A" id="orange" style={{width: '60%',position: 'relative',left: '20%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
                 <div className="nested-A">
                     <section className="section-mobile" style={{fontWeight:500,fontSize:17,fontWeight: 800,wordSpacing:0}}>
                         Application of developed data infrastructure,information<br/>
@@ -95,7 +96,8 @@ class About extends Component {
                         management and communication to improve Human settlement and enviroment.
                     </section>
                 </div>
-            </p>
+            </div>
+        </p>
             </div>
         </div>
         <div className="two-about">
@@ -286,20 +288,20 @@ class About extends Component {
             <p>
                         <section style={{textAlign:'center'}}>
                             <section className="main-flex-container">
-                            <div className="flex-container-1">
-                                <img src={Data} href="Data" className="image"/>
+                            <div className="flex-container-1-first-element">
+                                <img src={Data} href="Data" className="image-icon-A"/>
                                 <div className="flex-item"><b>Data</b></div>
                             </div>
                             <div className="flex-container-1">
-                                <img src={Information} href="Information" className="image"/>
+                                <img src={Information} href="Information" className="image-icon-A"/>
                                 <div className="flex-item"><b>Information</b></div>
                             </div>
                             <div className="flex-container-1">
-                                <img src={Knowledge} href="Knowledge" className="image"/>
+                                <img src={Knowledge} href="Knowledge" className="image-icon-A"/>
                                 <div className="flex-item"><b>Knowledge</b></div>
                             </div>
-                            <div className="flex-container-1">
-                                <img src={Wisdom} href="Wisdom" className="image"/>
+                            <div className="flex-container-1-last-element">
+                                <img src={Wisdom} href="Wisdom" className="image-icon-A"/>
                                 <div className="flex-item"><b>Wisdom</b></div>
                             </div>
                         </section>
@@ -343,7 +345,7 @@ class About extends Component {
             <form onSubmit={this.handleSubmitlogin}>
             <p>
                <label>
-               <span className="ten-hi" style={{textAlign: 'right'}}>
+               <span className="ten-hi" className="mobile-header-right">
                <header style={{margin: '11px 20%'}}>
                     <h2>ABOUT US</h2><br/>
                     About Metronome<br/>

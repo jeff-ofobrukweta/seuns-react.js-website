@@ -13,6 +13,8 @@ import Data from '../images/Group 6.png';
 import Information from '../images/Group 7.png';
 import Knowledge from '../images/Group 8.png';
 import Wisdom from '../images/Group 9.png';
+import Smallnavbar from '../Naviconbar/Naviconbar';
+import Plane from '../images/plane.png';
 import axios from 'axios';
 import './Navbar.css';
 
@@ -76,7 +78,7 @@ class Navbar extends Component {
         <div className="Navbar">
                 <div className="one">
                     <div className="Nested">
-                    <Naviconbar/>
+                   <Naviconbar/> 
                     <p className="first" style={{position: 'relative',margin: '-13.86% 6%'}}>
                         <div className="nested-A"> 
                             <h2 style={{fontSize: '30px',marginBottom:'34px',transform: 'scale(1.04)'}}>
@@ -87,7 +89,7 @@ class Navbar extends Component {
                             <article className="sustainability" style={{fontSize: '30px'}}>ENVIROMENTAL SUSTAINABILITY.</article>
                             </h2>
                         </div>
-                        <div className="nested-A" id="orange" style={{borderBottom:'2.5px solid #f8cbad',width:'55%',transform: 'scale(1.04)',position: 'relative'
+                        <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'55%',transform: 'scale(1.04)',position: 'relative'
                         ,right: '0.5%'}}>
                         </div>
                         <div className="nested-A">
@@ -105,10 +107,11 @@ class Navbar extends Component {
                     </div>
                 </div>
                 <div className="parent-container-two-six">
+                <div className="parent-container-first-three-cover-section-A">
                 <div className="two">
-                <div>
-                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
-                </div>
+                    <div>
+                        <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                    </div>
                 </div>
                 <div className="three">
                     <div>
@@ -120,14 +123,23 @@ class Navbar extends Component {
                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
                     </div>
                 </div>
-                <div className="five">
-                    <div>
-                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
-                    </div>
+                <div className="circle-button-insection-A">
+                    <img src={Plane} alt="send-icon-button" style={{objectFit:'contain',padding:'30%',cursor:'pointer'}}/>
                 </div>
-                <div className="six">
-                    <div>
+                </div>
+                <div className="parent-container-first-three-cover-section-B">
+                    <div className="five">
+                        <div>
+                    <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
+                        </div>
+                    </div>
+                    <div className="six">
+                        <div>
                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={sketch} alt="png"/>
+                        </div>
+                    </div>
+                    <div className="circle-button-insection-B">
+                        <img src={Plane} alt="send-icon-button" style={{objectFit:'contain',padding:'30%',cursor:'pointer'}}/>
                     </div>
                 </div>
                 </div>
@@ -180,20 +192,20 @@ class Navbar extends Component {
                     <p>
                         <section style={{textAlign:'center'}}>
                         <section className="main-flex-container">
-                        <div className="flex-container-1">
-                            <img src={Data} href="Data" className="image"/>
+                        <div className="flex-container-1-first-element">
+                            <img src={Data} href="Data" className="image-icon-A"/>
                             <div className="flex-item"><b>Data</b></div>
                         </div>
                         <div className="flex-container-1">
-                            <img src={Information} href="Information" className="image"/>
+                            <img src={Information} href="Information" className="image-icon-A"/>
                             <div className="flex-item"><b>Information</b></div>
                         </div>
                         <div className="flex-container-1">
-                            <img src={Knowledge} href="Knowledge" className="image"/>
+                            <img src={Knowledge} href="Knowledge" className="image-icon-A"/>
                             <div className="flex-item"><b>Knowledge</b></div>
                         </div>
-                        <div className="flex-container-1">
-                            <img src={Wisdom} href="Wisdom" className="image"/>
+                        <div className="flex-container-1-last-element">
+                            <img src={Wisdom} href="Wisdom" className="image-icon-A"/>
                             <div className="flex-item"><b>Wisdom</b></div>
                         </div>
                     </section>
@@ -240,7 +252,7 @@ class Navbar extends Component {
                     <form onSubmit={this.handleSubmitlogin}>
                     <p>
                     <label>
-                    <span className="ten-hi" style={{textAlign: 'right'}}>
+                    <span className="ten-hi" className="mobile-header-right">
                         <header style={{margin: '11px 20%'}}>
                         <h2>ABOUT US</h2><br/>
                             About Metronome<br/>
