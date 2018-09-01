@@ -217,8 +217,8 @@ class Product extends Component {
                 </div>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'50%',margin:'20px 25%'}}></div>
                 <section style={{marginBottom:'10%'}}>
-                Providing usable solutions remains the pivot that supports<br/>
-               our research and execution process.
+                Providing usable solutions remains the<br/>
+                pivot that supports our research and execution process.
                 </section>
                 <div className="container-xcrew">
                     <img src={Screw} alt="xrew" className="xrew"/>
@@ -464,10 +464,8 @@ class Product extends Component {
                     <div className="nested-A" id="orange" style={{borderBottom:'2px solid #e14800',width:'30%',margin: '13px 35%'}}></div>
                     <section style={{fontSize:'16px',letterSpacing:'0px'}}>
                     <b>
-                        Lets create a world where data drives
-                        development.management and communication to improve <br/>
-                        Human settlement and enviroment.
-                        Application of developed data infrastructure,information<br/>
+                        Creating a sustainable enviroment demands informed decisions.<br/>
+                        Let us drive enviromental development through data together.
                     </b>
                     </section>
                     <input type="submit" value="GET IN TOUCH" style={{color:'rgb(255, 255, 255)',margin:'10px 0px',

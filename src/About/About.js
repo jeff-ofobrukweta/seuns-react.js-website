@@ -90,10 +90,11 @@ class About extends Component {
                 <div className="nested-A" id="orange" style={{width: '60%',position: 'relative',left: '20%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
                 <div className="nested-A">
                     <section className="section-mobile" style={{fontWeight:500,fontSize:17,fontWeight: 800,wordSpacing:0}}>
-                        Application of developed data infrastructure,information<br/>
-                        management and communication to improve Human settlement and enviroment.<br/>
-                        Application of developed data infrastructure,information<br/>
-                        management and communication to improve Human settlement and enviroment.
+                    We enable seamless,integrated strategies for the use of data and information to address<br/> 
+                    human settlements and environmental challenges in developing countries,by generating<br/>
+                    and carrying out knowledge-intensive activities that provide largely customized<br/>
+                    innovations in the areas of Data Infrastructure Management & Communications Services<br/>
+                    and Human Settlement & Environment.
                     </section>
                 </div>
             </div>
@@ -111,9 +112,10 @@ class About extends Component {
             <div style={{width: '50%',position: 'relative',left: '25%',marginTop:10,borderBottom:'2px solid #f8cbad'}}></div>
             </section>
             <section style={{marginTop:'20px'}}>
-            Application of developed data infrastructure,information<br/>
-            management and communication to improve Human settlement and enviroment.
-            Application of developed data infrastructure,information<br/>
+            With the emergence of modern day digital revolution, the challenges of data<br/>
+            discovery, data access and data  sharing to make informed desgions continue<br/> 
+            to grow.We provide domain expertise in this area by addressing the following<br/>
+            concerns to sustainable enviromental development
             </section>
          </p>
         </div>
@@ -135,9 +137,10 @@ class About extends Component {
                         <img src={First} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                     Advanced geographic information<br/>analysis & spartial Enablements</section>
                     <section style={{margin:'20px'}}>
-                    Application of developed data infrastructure,information<br/>
-                    management and communication to improve Human settlement and enviroment.
-                    Application of developed data infrastructure,information<br/>
+                        Location is the center of everyday <br/>
+                        activities.Metronome designs related <br/>
+                        solutions that respond to the “WHERE <br/>
+                        QUESTION”
                     </section>
                     </div>
                         </section>
@@ -159,9 +162,14 @@ class About extends Component {
                             <img src={Secound} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                         Real Time Analysis &<br/>Projections</section>
                         <section style={{margin:'20px'}}>
-                        Application of developed data infrastructure,information<br/>
-                        management and communication to improve Human settlement and enviroment.
-                        Application of developed data infrastructure,information<br/>
+                        Data resolves global problems.<br/>
+                        We provide private and public<br/>
+                        organizations with real time solutions<br/>
+                        through real time understanding within the<br/>
+                        enviroment by capturing data through<br/>
+                        the deployment of modern technology and<br/>
+                        interactive integration of textual and<br/> 
+                        spatial data.
                         </section>
                 </div>
                 </section>
@@ -183,9 +191,14 @@ class About extends Component {
                     <img src={Third} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                     Geospatial Web Services &<br/>Use case Applications</section>
                     <section style={{margin:'20px'}}>
-                    Application of developed data infrastructure,information<br/>
-                    management and communication to improve Human settlement and enviroment.
-                    Application of developed data infrastructure,information<br/>
+                    E-plan, E-planning & i-land.<br/>
+                    We utilise these tools to provide web<br/>
+                    based solutions that aid real life<br/>
+                        innovation strategies.<br/>
+                    Our goal is to constantly provide an<br/>
+                    inclusive platform for community <br/>
+                    engagement & consultation ultimately.<br/>
+                    creating livable enviroments
                     </section>
                 </div>
                 </section>
@@ -196,15 +209,16 @@ class About extends Component {
             <section>
             <img src={City} alt="image-desktop" style={{position:'relative',width:'50px'}}  className="icon-animate"/><br/>
             <h2>
-            HEALTH SETTLEMENT <br/>
+            HUMAN SETTLEMENT <br/>
             AND ENVIROMENT.
             </h2>
             <div style={{width: '50%',position: 'relative',left: '25%',marginTop:10,borderBottom:'2px solid #f8cbad'}}></div>
             </section>
             <section style={{marginTop:'20px'}}>
-            Application of developed data infrastructure,information<br/>
-            management and communication to improve Human settlement and enviroment.
-            Application of developed data infrastructure,information<br/>
+            Already,more than half of the world population lives in urban areas,<br/> 
+            resulting in significant social and environmental consequences.<br/>
+            Metronome uses enabling technologies for seamless measurement,<br/> 
+            monitoring, understanding and management of urban dynamism.
             </section>
         </p>
         </div>
@@ -226,10 +240,12 @@ class About extends Component {
                     <img src={Fourth} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                     Comprehensive &<br/>Strategic Planning</section>
                     <section style={{margin:'20px'}}>
-                    Application of developed data infrastructure,information<br/>
-                    management and communication to improve Human settlement and enviroment.
-                    Application of developed data infrastructure,information<br/>
-                    management and communication to improve Human settlement and enviroment.
+                        Allocation of space & location of uses<br/>
+                        to achieve sustainability,productivity &<br/>
+                        liveability are the foundation for the<br/>
+                        growth & development of cites
+                        and regions.At Metronome we generate plans through<br/>
+                        holistic deliberate processes.
                     </section>
                     </div>
                 </section>
@@ -251,10 +267,12 @@ class About extends Component {
                     <img src={Fifth} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                 Design &<br/>Enviromental Stewarship</section>
                 <section style={{margin:'20px'}}>
-                Application of developed data infrastructure,information<br/>
-                management and communication to improve Human settlement and enviroment.
-                Application of developed data infrastructure,information<br/>
-                management and communication to improve Human settlement and enviroment.
+                Aligning with the global mission to achieve<br/>
+                the Sustainabe  Development <br/>
+                Goals, Metronome explores solutions for<br/>
+                restoring cities by addressing issues of urban<br/>
+                poverty through optimisation of dead<br/> 
+                capital and resources.
                 </section>
                 </div>
                 </section>
@@ -276,9 +294,12 @@ class About extends Component {
                     <img src={Sixth} alt="image-desktop" style={{position:'relative',width:'50px'}}  className="icon-animate"/><br/>
                 Transportation and<br/>Land Use</section>
                 <section style={{margin:'20px'}}>
-                Application of developed data infrastructure,information<br/>
-                management and communication to improve Human settlement and enviroment.
-                Application of developed data infrastructure,information
+                There is a need for paradigm shift in the<br/>
+                design and delivery of trasportation services for<br/> 
+                rural/urban environments to  compliment<br/>
+                location of uses and allocation of spaces.<br/>
+                Leveraging on data,we ensure these needs are<br/>
+                properly delivered.
                 </section>
                 </div>
                 </section>
@@ -308,10 +329,8 @@ class About extends Component {
                         <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'30%',margin: '13px 35%'}}></div>
                         <section style={{fontSize:'16px',letterSpacing:'0px'}}>
                         <b>
-                            Lets create a world where data drives
-                            development.management and communication to improve <br/>
-                            Human settlement and enviroment.
-                            Application of developed data infrastructure,information<br/>
+                            Creating a sustainable enviroment demands informed decisions.<br/>
+                            Let us drive enviromental development through data together.
                         </b>
                         </section>
                         <input type="submit" value="GET IN TOUCH" style={{color:'rgb(255, 255, 255)',margin:'10px 0px',

@@ -76,13 +76,11 @@ class Aboutpage extends Component {
                     <h2 style={{fontSize: '32px',fontWeight:'bold',lineHeight: 'calc(100%)'}}><b>RHYTHM, CONTINUITY, CONSISTENCY</b></h2>
                 </div>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'40%',margin:'23px 30%'}}></div>
-                <section>
-                <b>
-                management and communication to improve Human settlement and enviroment.<br/>
-                Application of developed data,data infrastructure,information Application<br/>
-                Application of developed data infrastructure,information,information<br/>
-                management and communication.
-                </b>
+                <section style={{fontSize:'19px'}}>
+                We believe building a sustainable, liveable and<br/>
+                productive society involve policy which must be <br/>
+                cosistently informed by evidence underpined by<br/> 
+                dynamic data infrastructure.
                 </section>
                 <div>
                 </div>
@@ -95,40 +93,39 @@ class Aboutpage extends Component {
 
             <div className="realabout-two">
                 <p>
-                <h2 style={{fontSize: '28px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
+                <h2 style={{fontSize: '28px',fontWeight:'bold'}}>STRATEGIC APPROACH</h2>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'33%',margin:'20px 67%'}}></div>
                 <section>
-                Application of developed data infrastructure,information<br/>
-                management and communication to improve Human settlement and enviroment.
-                <br/>
-                Application of developed data infrastructure,information<br/>
-                management and communication to improve Human settlement and enviroment. 
+                We  assemble, process, use and disseminate<br/>
+                information on issues that are particularly<br/>
+                relevant to development, liveability,<br/> 
+                sustainability & productivity. 
                 </section>
                 </p>
             </div>
             <div className="realabout-three">
                 <p>
-                <h2 style={{fontSize: '28px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
+                <h2 style={{fontSize: '28px',fontWeight:'bold'}}>ESTABLISHING A SOLID<br/>
+                 BASE FOR DEVELOPMENT</h2>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'33%',margin:'20px 0px'}}></div>
                 <section>
-                Application of developed data infrastructure,information<br/>
-                management and communication to improve Human settlement and enviroment.
-                <br/>
-                Application of developed data infrastructure,information<br/>
-                management and communication to improve Human settlement and enviroment. 
+                Here, we focus on the development of data<br/>
+                infrastructure, information management &<br/>
+                communication & applications to improve Human<br/>
+                Settlement & Environment. 
                 </section>
                 </p>
             </div>
             <div className="realabout-four">
                 <p>
-                <h2 style={{fontSize: '28px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
+                <h2 style={{fontSize: '28px',fontWeight:'bold'}}>DIVERSITY<br/>
+                 IN OPERATION</h2>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'33%',margin:'20px 67%'}}></div>
                 <section>
-                Application of developed data infrastructure,information<br/>
-                management and communication to improve Human settlement and enviroment.
-                <br/>
-                Application of developed data infrastructure,information<br/>
-                management and communication to improve Human settlement and enviroment. 
+                We provide technical assistance, consulting services &<br/>
+                developmental agenda for various entities, including<br/> 
+                government organizations, not-for-profit organizations,<br/> 
+                for-profit organizations & individuals
                 </section>
                 </p>
             </div>
@@ -156,10 +153,8 @@ class Aboutpage extends Component {
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'30%',margin: '13px 35%'}}></div>
                 <section style={{fontSize:'16px',letterSpacing:'0px'}}>
                 <b>
-                    Lets create a world where data drives
-                    development.management and communication to improve <br/>
-                    Human settlement and enviroment.
-                    Application of developed data infrastructure,information<br/>
+                   Creating a sustainable enviroment demands informed decisions.<br/>
+                   Let us drive enviromental development through data together.
                 </b>
                 </section>
                 <input type="submit" value="GET IN TOUCH" style={{color:'rgb(255, 255, 255)',margin:'10px 0px',

@@ -93,9 +93,10 @@ class Navbar extends Component {
                         ,right: '0.5%'}}>
                         </div>
                         <div className="nested-A">
-                            <section style={{fontWeight:500,fontSize:19,wordSpacing:1,marginTop:'23px',transform: 'scale(1.04)'}}>
-                                <b>Application of developed data infrastructure,information<br/>
-                                management and communication to improve Human<br/> settlement and enviroment.</b>
+                            <section style={{fontWeight:300,fontSize:19,wordSpacing:1,marginTop:'23px',transform: 'scale(1.04)'}}>
+                            Application of developed data infrastructure, information<br/>
+                            management and communications to improve Human<br/> 
+                            settlement and environment.
                             </section>
                         </div>
                     </p>
@@ -150,10 +151,11 @@ class Navbar extends Component {
                     </section>
                     <div style={{width: '96%',marginTop:30,borderBottom:'2px solid #f8cbad'}} className="horizontal"></div>
                     <section style={{marginTop:'20px'}} className="horizontal-second-index">
-                    Application of developed data infrastructure,information<br/>
-                    management and communication to improve Human settlement and enviroment.
-                    Application of developed data infrastructure,information<br/>
-                    management and communication to improve Human settlement and enviroment.
+                    Metronome is reforming development process by<br/> 
+                    providing effective solutions to contemporary local,<br/>
+                    regional and national challenges by understanding<br/>
+                    contemporary trends and employing environmentally<br/>
+                    friendly measures.
                     </section>
                     </p>
                     <p>
@@ -162,10 +164,12 @@ class Navbar extends Component {
                         <h2 style={{fontWeight:'700'}}>Data Management, Information management<br/>and communications</h2>
                         </section>
                         <section style={{marginTop:'20px'}}>
-                        Application of developed data infrastructure,information<br/>
-                        management and communication to improve Human settlement and enviroment.
-                        Application of developed data infrastructure,information<br/>
-                        management and communication to improve Human settlement and enviroment.
+                        With the emergence of modern day digital revolution, the<br/>
+                        challenges of data discovery, data access and data sharing to<br/> 
+                        make informed desgions continue to grow.<br/>
+                        Proper understanding of the enviromental guides<br/>
+                        functional developments.We provide domain expertise in this<br/>
+                        area by addressing the above concerns.
                         </section>
                     </p>
                 </div> 
@@ -181,10 +185,12 @@ class Navbar extends Component {
                         <h2 style={{fontWeight:'700'}}>Human Settlement and Enviroment</h2>
                         </section>
                         <section style={{marginTop:'20px',marginBottom: '15px'}}>
-                        Application of developed data infrastructure,information<br/>
-                        management and communication to improve Human settlement and enviroment.
-                        Application of developed data infrastructure,information<br/>
-                        management and communication to improve Human settlement and enviroment.
+                        Already, more than half of the world population lives in urban areas,<br/>
+                        resulting in significant social and environmental consequences.<br/>
+                        Metronome uses enabling technologies for seamless measurement,<br/>
+                        monitoring, understanding and management of urban dynamism,<br/>
+                        proffing sustainable solutions by integrating enviromentally <br/>
+                        concious strategies
                         </section>
                     </p>
                 </div>
@@ -212,10 +218,8 @@ class Navbar extends Component {
                     <div className="nested-A" id="orange" style={{borderBottom:'2px solid #e14800',width:'30%',margin: '13px 35%'}}></div>
                         <section style={{fontSize:'16px',letterSpacing:'0px'}}>
                         <b>
-                            Lets create a world where data drives
-                            development.management and communication to improve <br/>
-                            Human settlement and enviroment.
-                            Application of developed data infrastructure,information<br/>
+                            Creating a sustainable enviroment demands informed decisions.<br/>
+                            Let us drive enviromental development through data together.
                         </b>
                         </section>
                         <input type="submit" value="GET IN TOUCH" style={{color:'rgb(255, 255, 255)',margin:'10px 0px',

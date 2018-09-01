@@ -123,10 +123,11 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   .Nested-about p{
    text-align: center;
    padding: 0px;
-   margin: 0% 24%;
+   margin: 0% 0%;
    justify-content:center;
    position: absolute;
    top: 28%;
+   width: 100%
   }
   .two-about{
     background: #eee;
