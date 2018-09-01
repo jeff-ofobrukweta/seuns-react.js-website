@@ -15,6 +15,7 @@ import Knowledge from '../images/Group 8.png';
 import Wisdom from '../images/Group 9.png';
 import Smallnavbar from '../Naviconbar/Naviconbar';
 import Plane from '../images/plane.png';
+import { BrowserRouter, Link, Route } from 'react-router-dom';
 import axios from 'axios';
 import './Navbar.css';
 
@@ -29,12 +30,17 @@ class Navbar extends Component {
         }
         this.handleChangeemail = this.handleChangeEmail.bind(this);
         this.handlesubmitlogin = this.handleSubmitlogin.bind(this);
+        this.handleLink = this.handleLink.bind(this);
 
     }
 
     handleChangeEmail(event) {
         this.setState({email: event.target.value});
         console.log(">>>>>>>"+this.state.email);
+    }
+    handleLink(event){
+        event.preventDefault();
+        this.props.history.push('/work');
     }
 
     handleSubmitlogin = async (event)=>{
@@ -124,8 +130,8 @@ class Navbar extends Component {
                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={icecream} alt="png"/>
                     </div>
                 </div>
-                <div className="circle-button-insection-A">
-                    <img src={Plane} alt="send-icon-button" style={{objectFit:'contain',padding:'30%',cursor:'pointer'}}/>
+                <div className="circle-button-insection-A" id="circle-beep">
+                    <img src={Plane} alt="send-icon-button" style={{objectFit:'contain',padding:'30%',cursor:'pointer'}} onClick={this.handleLink}/>
                 </div>
                 </div>
                 <div className="parent-container-first-three-cover-section-B">
@@ -139,8 +145,8 @@ class Navbar extends Component {
                     <img style={{width:'100%',height:'434.88px',objectFit:"cover"}} src={sketch} alt="png"/>
                         </div>
                     </div>
-                    <div className="circle-button-insection-B">
-                        <img src={Plane} alt="send-icon-button" style={{objectFit:'contain',padding:'30%',cursor:'pointer'}}/>
+                    <div className="circle-button-insection-B" id="circle-beep">
+                        <img src={Plane} alt="send-icon-button" style={{objectFit:'contain',padding:'30%',cursor:'pointer'}} onClick={this.handleLink}/>
                     </div>
                 </div>
                 </div>

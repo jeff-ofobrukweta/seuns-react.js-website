@@ -87,7 +87,7 @@ class About extends Component {
                 <div className="nested-A"> 
                     <h2 style={{fontSize: '30px',fontWeight:'bold'}}>SOLUTION FOCUSED THINKING</h2>
                 </div>
-                <div className="nested-A" id="orange" style={{width: '60%',position: 'relative',left: '20%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
+                <div className="nested-A" id="orange" style={{width: '45%',position: 'relative',left: '27%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
                 <div className="nested-A">
                     <section className="section-mobile" style={{fontWeight:500,fontSize:17,fontWeight: 800,wordSpacing:0}}>
                     We enable seamless,integrated strategies for the use of data and information to address<br/> 

@@ -457,4 +457,29 @@ blockquote {
     transform: scale(1.05);
  }
 
+ /* the float button efffect */
+#circle-beep:hover,
+#circle-beep:focus {
+  -webkit-animation: pulse 1s;
+          animation: pulse 1s;
+  box-shadow: 0 0 0 2em rgba(255, 255, 255, 0);
+}
+
+@-webkit-keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 var(--hover);
+  }
+}
+
+#circle-beep {
+    --color: #ef6eae;
+    --hover: #ef8f6e;
+  }
+
 

@@ -40,10 +40,10 @@ handleClicktoogle=(e)=>{
                 <div className="logo"><input type="submit" value="Metronome" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700}}/></div>
                 <nav id="nav" className="nav">
                   <ul id="ul" className="idle-ul">
-                    <li id="li"><a id="a" href="/" className="active">ABOUT US</a></li>
-                    <li id="li"><a id="a" href="/work">SERVICES</a></li>
-                    <li id="li"><a id="a" href="/services">PROJECTS</a></li>
-                    <li id="li"><a id="a" href="/about">CONTACT US</a></li>
+                    <li id="li"><a id="a" href="/about" className="active">ABOUT US</a></li>
+                    <li id="li"><a id="a" href="/services">SERVICES</a></li>
+                    <li id="li"><a id="a" href="/work">PROJECTS</a></li>
+                    <li id="li"><a id="a" href="/">CONTACT US</a></li>
                   </ul>
                   <span className="menu-toogle-1" data-reactid='1' id="menu-toogle-1-id" onClick={this.handleMenuToogle}>
                     <i className="hamburger-bars"  id="2"></i>

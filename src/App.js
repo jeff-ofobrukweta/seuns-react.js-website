@@ -35,9 +35,6 @@ class App extends Component {
       <Route path="/about" exact component={About}/>
       <Route path="/work" exact component={Product}/>
       <Route  component={Errorpage}/>
-      {
-        // {this.state.auth? <Route path="/landing" exact component={AsyncMaterialCard}/>:null}
-      }
     </Switch>
       </div>
     );
