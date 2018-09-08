@@ -63,7 +63,6 @@ handleroute=(e)=>{
     this.setState({toogledisplay:trueLink})
     const EncodeUrl = encodeURIComponent(1)+"="+encodeURIComponent(trueLink);
     const queryString = EncodeUrl;
-    console.log(EncodeUrl);
     this.props.history.push({
       pathname:`${trueLink}`,
       search:'?'+queryString
