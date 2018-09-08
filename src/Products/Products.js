@@ -212,10 +212,10 @@ class Product extends Component {
             <div className="workabout-one">
                 <p>
                 <div className="nested-A"> 
-                    <h2 style={{fontSize: '32px',fontWeight:'bold',lineHeight:'calc(100%)'}}>TAILORED TO SPECIFIC NEED</h2>
+                    <h2 style={{fontSize: '3vmax',fontWeight:'bold',lineHeight:'calc(100%)'}}>TAILORED TO SPECIFIC NEED</h2>
                 </div>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'50%',margin:'20px 25%'}}></div>
-                <section style={{marginBottom:'10%',fontSize: '19px'}}>
+                <section style={{marginBottom:'10%',fontSize: '1.9vmax'}}>
                 Providing usable solutions remains the<br/>
                 pivot that supports our research and execution process.
                 </section>
@@ -255,7 +255,7 @@ class Product extends Component {
                     </section>
                     </div>
                 </div>
-                <div class="long-card long-card-1" id={displaylargeCard}> 
+                <div class="long-card long-card-1"> 
                     <div className="box one">
                     <img style={{width:'100%',height:'inherit',objectFit:"cover",height:'100%'}} src={sketch} alt="png"/>
                     </div>
@@ -282,7 +282,7 @@ class Product extends Component {
                     </section>
                     </div>
                 </div>
-                <div class="long-card long-card-1" id={displaylargeCard}>
+                <div class="long-card long-card-1">
                     <div className="box one">
                     <img style={{width:'100%',height:'inherit',objectFit:"cover",height:'100%'}} src={sketch} alt="png"/>
                     </div>
@@ -487,6 +487,11 @@ class Product extends Component {
                     Projects<br/>
                     Clients
                 </header>
+                <header className="mobile-header-only" style={{margin: '11px 20%'}}>
+                        <h2>ABOUT US</h2><br/>
+                        About Metronome<br/>
+                        Work Process
+                </header>
             </span>
             <section style={{textAlign:'center'}}>
                 <input type="text" placeholder=" NAME"  style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#eee',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
@@ -524,8 +529,8 @@ class Product extends Component {
         <div className="workabout-five" style={{padding:'20px'}}>
                 <p>
                 <section>
-                <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                <h2>LAGOS</h2>
+                <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metronome" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
+                <h2 className="logo-header">LAGOS</h2>
                 </section>
                 <section style={{marginTop:'20px',fontSize:'15px'}}>
                 2nd Floor,Kresta Laurel Building,<br/>
@@ -536,7 +541,7 @@ class Product extends Component {
             <p>
                 <section>
                 <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',opacity: 0,width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                <h2>ABUJA</h2>
+                <h2 className="logo-header">ABUJA</h2>
                 </section>
                 <section style={{marginTop:'20px',fontSize:'15px'}}>
                 Plot 41,Algiers street,street suit 301<br/>
@@ -547,7 +552,7 @@ class Product extends Component {
             <p>
                 <section>
                 <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height:'30px',opacity: 0,width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                <h2>MOBILE</h2>
+                <h2 className="logo-header">MOBILE</h2>
                 </section>
                 <section style={{marginTop:'20px',fontSize:'15px'}}>
                 +234 8186998661<br/>

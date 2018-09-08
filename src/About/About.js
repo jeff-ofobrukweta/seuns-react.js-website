@@ -17,6 +17,7 @@ import Data from '../images/Group 6.png';
 import Information from '../images/Group 7.png';
 import Knowledge from '../images/Group 8.png';
 import Wisdom from '../images/Group 9.png';
+import Dart from '../images/Target_New.png';
 import axios from 'axios';
 
 import './About.css';
@@ -81,6 +82,9 @@ class About extends Component {
       <Loader/>
         <div className="one-about">
             <div className="Nested-about">
+                <div className="image-holder">
+                    <img src={Dart} alt="dart-image"/>
+                </div>
             <Navibaricon/>
         <p className="first-about">
             <div className="big-module-before-nest">
@@ -89,7 +93,7 @@ class About extends Component {
                 </div>
                 <div className="nested-A" id="orange" style={{width: '45%',position: 'relative',left: '27%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
                 <div className="nested-A">
-                    <section className="section-mobile" style={{fontSize:17,fontWeight: 500,wordSpacing:0}}>
+                    <section className="section-mobile" style={{fontSize:'23px',fontWeight: 300,lineHeight:'25px'}}>
                     We enable seamless,integrated strategies for the use of data and information to address<br/> 
                     human settlements and environmental challenges in developing countries,by generating<br/>
                     and carrying out knowledge-intensive activities that provide largely customized<br/>
@@ -99,7 +103,7 @@ class About extends Component {
                 </div>
             </div>
         </p>
-            </div>
+        </div>
         </div>
         <div className="two-about">
          <p style={{textAlign:'center',marginTop:'40px'}}>
@@ -132,7 +136,7 @@ class About extends Component {
                         padding: '10px 0px',
                         background: '#3b3838',
                         fontWeight:'bold',
-                        color:'#ecbda5'
+                        color:'#ecbda5'.log
                         }}>
                         <img src={First} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                     Advanced geographic information<br/>analysis & spartial Enablements</section>
@@ -331,7 +335,7 @@ class About extends Component {
                         <b>
                             Creating a sustainable enviroment demands informed decisions.<br/>
                             Let us drive enviromental development through data together.
-                        </b>
+                        </b>.log
                         </section>
                         <input type="submit" value="GET IN TOUCH" style={{color:'rgb(255, 255, 255)',margin:'10px 0px',
                             fontWeight: 700,
@@ -349,6 +353,11 @@ class About extends Component {
             <p>
             <span className="ten-hi" style={{textAlign: 'left'}}>
                     <header style={{margin: '11px 20%'}}>
+                        <h2>LEARN MORE</h2><br/>
+                        Projects<br/>
+                        Clients
+                    </header>
+                    <header className="mobile-header-only" style={{margin: '11px 20%'}}>
                         <h2>ABOUT US</h2><br/>
                         About Metronome<br/>
                         Work Process
@@ -392,8 +401,8 @@ class About extends Component {
         <div className="eight-about" style={{padding:'20px'}}>
                 <p>
                 <section>
-                <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',position:'relative',left:'0%',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                <h2>LAGOS</h2>
+                <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metronome" style={{height: '30px',width: '110px',border: '0px',position:'relative',left:'0%',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
+                <h2 className="logo-header">LAGOS</h2>
                 </section>
                 <section style={{marginTop:'20px',fontSize:'15px'}}>
                 2nd Floor,Kresta Laurel Building,<br/>
@@ -404,7 +413,7 @@ class About extends Component {
             <p>
                 <section>
                 <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',opacity: 0,width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                <h2>ABUJA</h2>
+                <h2 className="logo-header">ABUJA</h2>
                 </section>
                 <section style={{marginTop:'20px',fontSize:'15px'}}>
                 Plot 41,Algiers street,street suit 301<br/>
@@ -415,7 +424,7 @@ class About extends Component {
             <p>
                 <section>
                 <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height:'30px',opacity: 0,width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                <h2>MOBILE</h2>
+                <h2 className="logo-header">MOBILE</h2>
                 </section>
                 <section style={{marginTop:'20px',fontSize:'15px'}}>
                 +234 8186998661<br/>

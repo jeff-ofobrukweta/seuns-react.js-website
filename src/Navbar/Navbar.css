@@ -32,6 +32,9 @@
       width: auto;
     }
   }
+ a .logo h2{
+      color: red;
+  }
   .Navbar{
     display:grid;
     grid-template-columns:repeat(3,1fr);
@@ -39,7 +42,9 @@
     grid-gap:1px;
     max-width: 100%;
     margin:0px auto;
-
+}
+h2.logo-header{
+  color: rgb(225, 72, 0);
 }
 .Navbar div{
     /* border: 1px solid #000; */

@@ -30,9 +30,9 @@
 #header #nav ul{
     margin: 0;
     padding: 0;
+    /* margin-left: -7%; */
     display: none;
-    margin-left: -17%;
-    transition: all .1s ease-in-out, translate .2s;
+    transition: margin-left .7s ease-in-out;
 }
 #header #nav #ul #li{
     list-style:none;
@@ -45,7 +45,7 @@
     text-decoration: none;
     font-family: inherit;
     font-weight: 300;
-    font-size: 1.3rem;
+    font-size:20px;
     display:block;
     transition:all 1.1s ease-in-out;
 
@@ -63,7 +63,12 @@
     cursor: pointer;
     display: none;
 }
-
+.display-none{
+    display: none;
+}
+.inline-block{
+    display: inline-block;
+}
 
 .menu-toogle-1{
     color:#000000 !important;
@@ -95,6 +100,9 @@
     bottom: 5px;
    
 }
+/* .idle-li{
+    display: none;
+} */
 
 /* states in css */
 .nav-active {

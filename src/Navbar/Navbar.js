@@ -36,7 +36,6 @@ class Navbar extends Component {
 
     handleChangeEmail(event) {
         this.setState({email: event.target.value});
-        console.log(">>>>>>>"+this.state.email);
     }
     handleLink(event){
         event.preventDefault();
@@ -251,6 +250,11 @@ class Navbar extends Component {
                                     Client
                                 </section>
                             </header>
+                            <header className="mobile-header-only" style={{margin: '11px 20%'}}>
+                                <h2>ABOUT US</h2><br/>
+                                About Metronome<br/>
+                                Work Process
+                            </header>
                         </span>
                         <section style={{textAlign:'center',margin:'25px 0px'}}>
                             <input type="text" placeholder=" NAME" style={{width:'60%',height: 34,border:0,margin: '0px 0px',backgroundColor:'#ccc',outline:0,padding: '0px 2%',borderRadius:'4px'}}/>
@@ -289,8 +293,8 @@ class Navbar extends Component {
                 <div className="eleven">
                     <p>
                         <section>
-                        <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                        <h2>LAGOS</h2>
+                        <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metronome" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
+                        <h2 className="logo-header">LAGOS</h2>
                         </section>
                         <section style={{marginTop:'20px',fontSize:'15px'}}>
                         2nd Floor,Kresta Laurel Building,<br/>
@@ -301,7 +305,7 @@ class Navbar extends Component {
                     <p>
                         <section>
                         <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',opacity: 0,width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                        <h2>ABUJA</h2>
+                        <h2 className="logo-header">ABUJA</h2>
                         </section>
                         <section style={{marginTop:'20px',fontSize:'15px'}}>
                         Plot 41,Algiers street,street suit 301<br/>
@@ -312,7 +316,7 @@ class Navbar extends Component {
                     <p>
                         <section>
                         <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height:'30px',opacity: 0,width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                        <h2>MOBILE</h2>
+                        <h2 className="logo-header">MOBILE</h2>
                         </section>
                         <section style={{marginTop:'20px',fontSize:'15px'}}>
                         +234 8186998661<br/>

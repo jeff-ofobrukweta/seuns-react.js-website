@@ -8,7 +8,7 @@ import Knowledge from '../images/Group 8.png';
 import Wisdom from '../images/Group 9.png';
 import Messagebox from '../Grid/Grid';
 import Tree from '../images/Asset.png';
-import Circle4 from '../images/Call to Action_bg.png';
+import Circle from '../images/Circle.svg';
 import axios from 'axios';
 import  './Aboutpage.css';
 
@@ -36,8 +36,6 @@ class Aboutpage extends Component {
         }
         await axios.post(`http://localhost:1337/findonethroughEmail`,data)
         .then((response)=> {
-            console.log(">>>>>>>",JSON.stringify(data,null,2));
-            console.log(">>>>>>>",JSON.stringify(response,null,2));
               if(response.status===200 && response.data.id!==null){
                 //   this.setState({info:})
                   let messageTosendEmail = `Email has been sent,please await our response(s)`;
@@ -72,11 +70,12 @@ class Aboutpage extends Component {
             <Naviconbar/>
             <div className="realabout-one">
                 <p>
+                <section className="section-break">
                 <div className="nested-A"> 
                     <h2 style={{fontSize: '32px',fontWeight:'bold',lineHeight: 'calc(100%)'}}><b>RHYTHM, CONTINUITY, CONSISTENCY</b></h2>
                 </div>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'40%',margin:'23px 30%'}}></div>
-                <section style={{fontSize:'19px'}}>
+                <section style={{fontSize:'25px',lineHeight:'26px'}}>
                 We believe building a sustainable, liveable and<br/>
                 productive society involve policy which must be <br/>
                 cosistently informed by evidence underpined by<br/> 
@@ -87,15 +86,19 @@ class Aboutpage extends Component {
                 <div className="push-image">
                     <img src={Tree} alt="section-image-tree" style={{width:'100%'}}/>
                 </div>
+                </section>
                 </p>
             </div>
             </div>
 
             <div className="realabout-two">
                 <p>
+                    <div className="circle-first-left-position-div">
+                        <img src={Circle} alt="collapsed-circles" className="circle-first-left-position"/>
+                    </div>
                 <h2 style={{fontSize: '28px',fontWeight:'bold'}}>STRATEGIC APPROACH</h2>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'33%',margin:'20px 67%'}}></div>
-                <section>
+                <section className="sides-subheader-content">
                 We  assemble, process, use and disseminate<br/>
                 information on issues that are particularly<br/>
                 relevant to development, liveability,<br/> 
@@ -105,10 +108,13 @@ class Aboutpage extends Component {
             </div>
             <div className="realabout-three">
                 <p>
+                <div className="circle-third-left-position-div">
+                    <img src={Circle} alt="collapsed-circles" className="circle-third-left-position"/>
+                </div>
                 <h2 style={{fontSize: '28px',fontWeight:'bold'}}>ESTABLISHING A SOLID<br/>
                  BASE FOR DEVELOPMENT</h2>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'33%',margin:'20px 0px'}}></div>
-                <section>
+                <section className="sides-subheader-content">
                 Here, we focus on the development of data<br/>
                 infrastructure, information management &<br/>
                 communication & applications to improve Human<br/>
@@ -118,10 +124,13 @@ class Aboutpage extends Component {
             </div>
             <div className="realabout-four">
                 <p>
-                <h2 style={{fontSize: '28px',fontWeight:'bold'}}>DIVERSITY<br/>
+                <div className="circle-first-right-position-div">
+                        <img src={Circle} alt="collapsed-circles" className="circle-fourth-left-position"/>
+                </div>
+                <h2 style={{foredntSize: '28px',fontWeight:'bold'}}>DIVERSITY<br/>
                  IN OPERATION</h2>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'33%',margin:'20px 67%'}}></div>
-                <section>
+                <section className="sides-subheader-content">
                 We provide technical assistance, consulting services &<br/>
                 developmental agenda for various entities, including<br/> 
                 government organizations, not-for-profit organizations,<br/> 
@@ -173,6 +182,11 @@ class Aboutpage extends Component {
             <p>
             <span className="ten-hi" style={{textAlign: 'left'}}>
                      <header style={{margin: '11px 20%'}}>
+                        <h2>LEARN MORE</h2><br/>
+                        Projects<br/>
+                        Clients
+                    </header>
+                    <header className="mobile-header-only" style={{margin: '11px 20%'}}>
                         <h2>ABOUT US</h2><br/>
                         About Metronome<br/>
                         Work Process
@@ -214,8 +228,8 @@ class Aboutpage extends Component {
             <div className="realabout-seven">
                     <p>
                     <section>
-                    <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                    <h2>LAGOS</h2>
+                    <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metronome" style={{height: '30px',width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
+                    <h2 className="logo-header">LAGOS</h2>
                     </section>
                     <section style={{marginTop:'20px',fontSize:'15px'}}>
                     2nd Floor,Kresta Laurel Building,<br/>
@@ -226,7 +240,7 @@ class Aboutpage extends Component {
                 <p>
                     <section>
                     <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height: '30px',opacity: 0,width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                    <h2>ABUJA</h2>
+                    <h2 className="logo-header">ABUJA</h2>
                     </section>
                     <section style={{marginTop:'20px',fontSize:'15px'}}>
                     Plot 41,Algiers street,street suit 301<br/>
@@ -237,7 +251,7 @@ class Aboutpage extends Component {
                 <p>
                     <section>
                     <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metroname" style={{height:'30px',opacity: 0,width: '110px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>
-                    <h2>MOBILE</h2>
+                    <h2 className="logo-header">MOBILE</h2>
                     </section>
                     <section style={{marginTop:'20px',fontSize:'15px'}}>
                     +234 8186998661<br/>
