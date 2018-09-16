@@ -131,6 +131,8 @@
     display:none;
 }
 
+
+
 /* change navbar @1244px- query */
 @media screen and (max-width: 1244px) {
     #header #nav{

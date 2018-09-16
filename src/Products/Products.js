@@ -11,6 +11,10 @@ import Knowledge from '../images/Group 8.png';
 import Wisdom from '../images/Group 9.png';
 import Screw from '../images/cropgear.png';
 import Arrow from '../images/Arrowdown-01.png';
+import Nav1 from '../Loader/Nav1';
+import Nav2 from '../Loader/Nav2';
+import Nav3 from '../Loader/Nav3';
+import Nav4 from '../Loader/Project';
 import axios from 'axios';
 import './Products.css';
 
@@ -208,6 +212,10 @@ class Product extends Component {
             <Naviconbar/>
             <div className="Navbar-workabout">
                 <Loader/>
+                <Nav1/>
+                <Nav2/>
+                <Nav3/>
+                <Nav4/>
             <div className="workabout-one-parent">
             <div className="workabout-one">
                 <p>
@@ -215,7 +223,7 @@ class Product extends Component {
                     <h2 style={{fontSize: '3vmax',fontWeight:'bold',lineHeight:'calc(100%)'}}>TAILORED TO SPECIFIC NEED</h2>
                 </div>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'50%',margin:'20px 25%'}}></div>
-                <section style={{marginBottom:'10%',fontSize: '1.9vmax'}}>
+                <section style={{marginBottom:'10%',fontSize: '1.5vmax'}}>
                 Providing usable solutions remains the<br/>
                 pivot that supports our research and execution process.
                 </section>

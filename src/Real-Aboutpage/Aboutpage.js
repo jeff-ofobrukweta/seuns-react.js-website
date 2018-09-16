@@ -9,6 +9,10 @@ import Wisdom from '../images/Group 9.png';
 import Messagebox from '../Grid/Grid';
 import Tree from '../images/Asset.png';
 import Circle from '../images/Circle.svg';
+import Nav1 from '../Loader/Nav1';
+import Nav2 from '../Loader/Nav2';
+import Nav3 from '../Loader/Nav3';
+import Nav4 from '../Loader/Project';
 import axios from 'axios';
 import  './Aboutpage.css';
 
@@ -66,6 +70,10 @@ class Aboutpage extends Component {
     return (
        <div className="Navbar-realabout">
             <Loader/>
+            <Nav1/>
+            <Nav2/>
+            <Nav3/>
+            <Nav4/>
             <div className="realabout-one-parent">
             <Naviconbar/>
             <div className="realabout-one">
@@ -125,7 +133,9 @@ class Aboutpage extends Component {
             <div className="realabout-four">
                 <p>
                 <div className="circle-first-right-position-div">
-                        <img src={Circle} alt="collapsed-circles" className="circle-fourth-left-position"/>
+                        {
+                            //<img src={Circle} alt="collapsed-circles" className="circle-fourth-left-position"/>
+                        }
                 </div>
                 <h2 style={{foredntSize: '28px',fontWeight:'bold'}}>DIVERSITY<br/>
                  IN OPERATION</h2>

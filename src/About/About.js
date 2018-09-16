@@ -18,6 +18,10 @@ import Information from '../images/Group 7.png';
 import Knowledge from '../images/Group 8.png';
 import Wisdom from '../images/Group 9.png';
 import Dart from '../images/Target_New.png';
+import Nav1 from '../Loader/Nav1';
+import Nav2 from '../Loader/Nav2';
+import Nav3 from '../Loader/Nav3';
+import Nav4 from '../Loader/Project';
 import axios from 'axios';
 
 import './About.css';
@@ -80,6 +84,10 @@ class About extends Component {
     return (
       <div className="About-parent-container">
       <Loader/>
+      <Nav1/>
+      <Nav2/>
+      <Nav3/>
+      <Nav4/>
         <div className="one-about">
             <div className="Nested-about">
                 <div className="image-holder">
@@ -93,7 +101,7 @@ class About extends Component {
                 </div>
                 <div className="nested-A" id="orange" style={{width: '45%',position: 'relative',left: '27%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
                 <div className="nested-A">
-                    <section className="section-mobile" style={{fontSize:'23px',fontWeight: 300,lineHeight:'25px'}}>
+                    <section className="section-mobile" style={{fontSize:'1.5vmax',fontWeight: 300,lineHeight:'25px'}}>
                     We enable seamless,integrated strategies for the use of data and information to address<br/> 
                     human settlements and environmental challenges in developing countries,by generating<br/>
                     and carrying out knowledge-intensive activities that provide largely customized<br/>
@@ -398,7 +406,7 @@ class About extends Component {
             </form>
             </section>
         </div>
-        <div className="eight-about" style={{padding:'20px'}}>
+        <div className="eight-about" style={{padding:'20px',background:'#eee'}}>
                 <p>
                 <section>
                 <a href="#" className="logo" style={{marginLeft:'0rem'}}><input type="submit" value="Metronome" style={{height: '30px',width: '110px',border: '0px',position:'relative',left:'0%',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,marginBottom:'10%'}}/></a>

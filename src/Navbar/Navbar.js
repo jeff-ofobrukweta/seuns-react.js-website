@@ -15,6 +15,10 @@ import Knowledge from '../images/Group 8.png';
 import Wisdom from '../images/Group 9.png';
 import Smallnavbar from '../Naviconbar/Naviconbar';
 import Plane from '../images/plane.png';
+import Nav1 from '../Loader/Nav1';
+import Nav2 from '../Loader/Nav2';
+import Nav3 from '../Loader/Nav3';
+import Nav4 from '../Loader/Project';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
 import axios from 'axios';
 import './Navbar.css';
@@ -79,7 +83,13 @@ class Navbar extends Component {
     return (
         <div id="wrapper">
         <div className="section-grid-1">
+        <div className="button-wrapper">
         <Loader/>
+        <Nav1/>
+        <Nav2/>
+        <Nav3/>
+        <Nav4/>
+        </div>
         <div className="Navbar">
                 <div className="one">
                     <div className="Nested">
