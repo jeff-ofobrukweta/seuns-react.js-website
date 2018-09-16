@@ -6,7 +6,7 @@ class Nav4 extends Component {
   render() {
     return (
        <div>
-       <div id="fab4" className="fab2"><a href="/services">
+       <div id="fab4" className="fab2"><a href="/work">
        <img src={Boxes} alt="box"/>
        </a></div>
        </div>
