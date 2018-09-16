@@ -6,8 +6,8 @@ class Nav4 extends Component {
   render() {
     return (
        <div>
-       <div id="fab4" className="fab2"><a href="/">
-       <img src={Boxes} alt="home"/>
+       <div id="fab4" className="fab2"><a href="/services">
+       <img src={Boxes} alt="box"/>
        </a></div>
        </div>
     );
