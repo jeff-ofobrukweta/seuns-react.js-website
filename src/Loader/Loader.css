@@ -9,7 +9,7 @@
     line-height: 70px;
     color: white;
     text-align: center;
-    z-index: 9999999999999999999999999999;
+    z-index: 999999;
     
     position: fixed;
     right: 31px;
@@ -39,7 +39,7 @@
   position: fixed;
   right: 37px;
   bottom: 213px;
-  z-index: 9999999999999999999999999999;
+  z-index: 999999;
   
  transition: all 0.3s ease-in-out;
 }
@@ -65,7 +65,7 @@
   position: fixed;
   right: 37px;
   bottom: 159px;
-  z-index: 9999999999999999999999999999;
+  z-index: 999999;
   
  transition: all 0.3s ease-in-out;
 }
@@ -89,7 +89,7 @@
   position: fixed;
   right: 37px;
   bottom: 108px;
-  z-index: 9999999999999999999999999999;
+  z-index: 999999;
   
  transition: all 0.3s ease-in-out;
 }
@@ -117,7 +117,7 @@
   position: fixed;
   right: 37px;
   bottom: 270px;
-  z-index: 9999999999999999999999999999;
+  z-index: 999999;
   
  transition: all 0.3s ease-in-out;
 }
@@ -129,6 +129,6 @@
 .mobile-toogle-active{
   right: 31px !important;
   bottom: 40px !important;
-  z-index: -9999999999999999999999999999 !important;
+  z-index: -99999 !important;
 }
  
