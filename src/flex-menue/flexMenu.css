@@ -140,6 +140,16 @@
     }
     
   }
+/* change navbar @1244px- query */
+@media screen and (min-width: 1244px) {
+   .button-wrapper{
+       display: none;
+   }
+   .float-parent-container{
+       display:none;
+   }
+    
+  }
 
 
 

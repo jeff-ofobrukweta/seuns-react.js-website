@@ -175,7 +175,7 @@ class Navbar extends Component {
                     </p>
                     <p>
                         <section>
-                        <img src={Desk} alt="image-desktop" style={{position:'relative',width:'50px'}}/><br/>
+                        <a href="/services"><img src={Desk} alt="image-desktop" style={{position:'relative',width:'50px'}}/></a><br/>
                         <h2 style={{fontWeight:'700'}}>Data Management, Information management<br/>and communications</h2>
                         </section>
                         <section style={{marginTop:'20px'}}>
@@ -196,7 +196,7 @@ class Navbar extends Component {
                     </p>
                     <p>
                         <section>
-                        <img src={City} alt="image-castle" style={{position:'relative',width:'50px'}}/><br/>
+                        <a href="/services"><img src={City} alt="image-castle" style={{position:'relative',width:'50px'}}/></a><br/>
                         <h2 style={{fontWeight:'700'}}>Human Settlement and Enviroment</h2>
                         </section>
                         <section style={{marginTop:'20px',marginBottom: '15px'}}>

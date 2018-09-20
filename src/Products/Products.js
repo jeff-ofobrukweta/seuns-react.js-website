@@ -211,11 +211,13 @@ class Product extends Component {
       <div className="Product">
             <Naviconbar/>
             <div className="Navbar-workabout">
-                <Loader/>
+            <div className="float-parent-container">
+            <Loader/>
                 <Nav1/>
                 <Nav2/>
                 <Nav3/>
                 <Nav4/>
+          </div>
             <div className="workabout-one-parent">
             <div className="workabout-one">
                 <p>
@@ -223,7 +225,7 @@ class Product extends Component {
                     <h2 style={{fontSize: '3vmax',fontWeight:'bold',lineHeight:'calc(100%)'}}>TAILORED TO SPECIFIC NEED</h2>
                 </div>
                 <div className="nested-A" id="orange" style={{borderBottom:'2px solid #f8cbad',width:'50%',margin:'20px 25%'}}></div>
-                <section style={{marginBottom:'10%',fontSize: '1.5vmax'}}>
+                <section style={{marginBottom:'10%',fontSize: '19px'}}>
                 Providing usable solutions remains the<br/>
                 pivot that supports our research and execution process.
                 </section>

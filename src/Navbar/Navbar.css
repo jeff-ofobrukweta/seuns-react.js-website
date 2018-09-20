@@ -196,7 +196,7 @@ h2.logo-header{
  margin: auto 4%;
 }
 .nine{
-  background: url('../images/Call to Action_bg.png') !important;
+  /* background: url('../images/Call to Action_bg.png') !important; */
   background-position:bottom bottom;
   text-align: center;
   background-repeat: no-repeat !important;
@@ -361,7 +361,7 @@ h2.logo-header{
       padding: 0px;
   }
   .Nested{
-    background: url('') !important;
+    /* background: url('') !important; */
     display: none;
     background-repeat: no-repeat !important;
     background-size: cover;

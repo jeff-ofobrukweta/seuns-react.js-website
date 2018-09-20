@@ -73,7 +73,7 @@ handleroute=(e)=>{
     return (
         <div>
             <header className="header-nav" id="header">
-                <div className="logo"><input type="submit" value="Metronome" style={{height: '2vmax',width: '9vmax',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,fontSize: '1.2vmax'}}/></div>
+                <div className="logo"><input type="submit" value="Metronome" style={{height: '30px',width: '115px',border: '0px',outline:' none',color:'#ffffff',background: '#232323',fontWeight:700,fontSize: '10px'}}/></div>
                 <nav id="nav" className="nav">
                   <ul id="ul" className="idle-ul">
                     <li id="li"><a  className="idle-li" id="a" href="/about" onClick={this.handleroute}>ABOUT US</a></li>

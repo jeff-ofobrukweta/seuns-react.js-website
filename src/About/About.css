@@ -66,7 +66,7 @@
 .card {
     background: #fff;
     display: inline-block;
-    height: 400px;
+    height: 400px !important;
     margin: 0 auto;
     position: relative;
     border-radius: 7px;
@@ -81,7 +81,6 @@ transform: scale(0.900);
 }
 
 .card-1:hover {
-transform: scale(0.930);
 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -90,7 +89,7 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   position: relative;
   top: 157px;
   left: -3rem;
-  width: 35vmax;
+  width: 75vmin;
   height: 37rem;
 }
 .image-holder img{
@@ -171,7 +170,7 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
    margin: 0px;
   }
 .six-about{
-    background: url('../images/Call to Action_bg.png') !important;
+    /* background: url('../images/Call to Action_bg.png') !important; */
     background-position:bottom bottom;
     text-align: center;
     background-repeat: no-repeat !important;
@@ -226,7 +225,7 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   @media screen and (max-width: 500px) {
     .Nested-about{
       /* background: url("../images/Target_New0.svg"); */
-      /* background-position: center center; */
+      background-position: center center;
       opacity: 0.6;
       background-repeat: no-repeat !important;
       background-size: contain !important;
@@ -244,6 +243,9 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
     }
   }
   @media screen and (max-width: 800px) {
+    .image-holder img{
+      display: none;
+  }
     .Nested-about{
       min-height: 100%;
       z-index: 1 !important;
@@ -255,9 +257,9 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
       grid-gap: 0px;
     }
     /* working on the animation on */
-    .Nested-about:hover{
-      filter:grayscale(1);
-    }
+   .image-holder{
+     display: none;
+   }
     .Nested-about p{
      text-align: center;
      padding: 0px;
@@ -313,19 +315,6 @@ box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
        padding: 20px;
        margin: 0px;
       }
-}
-
-      /* material-card */
-.card {
-    background: #fff;
-    display: inline-block;
-    height: 390px;
-    margin: 0 auto;
-    position: relative;
-    border-radius: 7px;
-    border: 1.3px solid #fff;
-    width: 80% !important;
-    cursor: pointer;
 }
 
 .card-1 {

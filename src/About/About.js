@@ -52,14 +52,10 @@ class About extends Component {
         }
         await axios.post(`http://localhost:1337/findonethroughEmail`,data)
         .then((response)=> {
-            console.log(">>>>>>>",JSON.stringify(data,null,2));
-            console.log(">>>>>>>",JSON.stringify(response,null,2));
               if(response.status===200 && response.data.id!==null){
                 //   this.setState({info:})
                   let messageTosendEmail = `Email has been sent,please await our response(s)`;
                   this.setState({emailSentmessage:messageTosendEmail});
-                  console.log('----------------email--'+this.state.emailSentmessage);
-                  console.log("_____",JSON.stringify(response.data));
                   flash.push('elementToFadeInAndOut');
                   this.setState({email:'',flashmessageIdentifier:flash});
                   this.props.history.push("/services");
@@ -83,11 +79,13 @@ class About extends Component {
     const {email,emailSentmessage,flashmessageIdentifier} = this.state;
     return (
       <div className="About-parent-container">
-      <Loader/>
-      <Nav1/>
-      <Nav2/>
-      <Nav3/>
-      <Nav4/>
+      <div className="float-parent-container">
+        <Loader/>
+        <Nav1/>
+        <Nav2/>
+        <Nav3/>
+        <Nav4/>
+      </div>
         <div className="one-about">
             <div className="Nested-about">
                 <div className="image-holder">
@@ -101,7 +99,7 @@ class About extends Component {
                 </div>
                 <div className="nested-A" id="orange" style={{width: '45%',position: 'relative',left: '27%',marginTop:30,marginBottom:30,borderBottom:'1px solid #e14800'}}></div>
                 <div className="nested-A">
-                    <section className="section-mobile" style={{fontSize:'1.5vmax',fontWeight: 300,lineHeight:'25px'}}>
+                    <section className="section-mobile" style={{fontSize:'18px',fontWeight: 300,lineHeight:'25px'}}>
                     We enable seamless,integrated strategies for the use of data and information to address<br/> 
                     human settlements and environmental challenges in developing countries,by generating<br/>
                     and carrying out knowledge-intensive activities that provide largely customized<br/>
@@ -116,7 +114,7 @@ class About extends Component {
         <div className="two-about">
          <p style={{textAlign:'center',marginTop:'40px'}}>
             <section>
-            <img src={Desk} alt="image-desktop" style={{position:'relative',width:'50px'}} className="icon-animate"/><br/>
+                <a href="/services"><img src={Desk} alt="image-desktop" style={{position:'relative',width:'50px'}} className="icon-animate"/></a><br/>
             <h2>
                DATA MANAGEMENT, INFORMATION MANAGEMENT<br/>
                AND COMMUNICATIONS.
@@ -144,7 +142,7 @@ class About extends Component {
                         padding: '10px 0px',
                         background: '#3b3838',
                         fontWeight:'bold',
-                        color:'#ecbda5'.log
+                        color:'#ecbda5'
                         }}>
                         <img src={First} alt="image-desktop" style={{position:'relative',width:'40px'}}  className="icon-animate"/><br/>
                     Advanced geographic information<br/>analysis & spartial Enablements</section>

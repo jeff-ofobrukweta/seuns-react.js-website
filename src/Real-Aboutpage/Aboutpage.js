@@ -69,11 +69,13 @@ class Aboutpage extends Component {
     const {email,emailSentmessage,flashmessageIdentifier} = this.state;
     return (
        <div className="Navbar-realabout">
-            <Loader/>
-            <Nav1/>
-            <Nav2/>
-            <Nav3/>
-            <Nav4/>
+       <div className="float-parent-container">
+       <Loader/>
+        <Nav1/>
+        <Nav2/>
+        <Nav3/>
+        <Nav4/>
+     </div>
             <div className="realabout-one-parent">
             <Naviconbar/>
             <div className="realabout-one">

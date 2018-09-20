@@ -149,7 +149,7 @@
    margin: 0px;
   }
   .workabout-three{
-    background: url('../images/Call to Action_bg.png') !important;
+    /* background: url('../images/Call to Action_bg.png') !important; */
     background-position:bottom bottom;
     text-align: center;
     background-repeat: no-repeat !important;
@@ -262,7 +262,13 @@ box-shadow: 0 1px 3px rgba(0,0,0,0.1), 0 .5px 0px rgba(0,0,0,0.04);
     /* background: blue; */
     flex-basis: 75%;  
 }
+/* removing the screw-background for smaller view-port */
+@media screen and (max-width: 1024px) {
+.container-xcrew{
+    display: none;
+}
 
+}
 @media screen and (max-width: 800px) {
     .image-icon-A{
         display: none;
@@ -353,3 +359,5 @@ right: 0%;
        margin: 0px;
       }
     }
+
+   
